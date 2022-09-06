@@ -1,0 +1,38 @@
+.blog-post-content a {
+  color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity)) !important
+}
+
+.blog-header, .blog-post, .blog-pagination {
+  margin-bottom: 2rem;
+}
+
+/* Make sure the image size is reasonable. */
+.blog-post img {
+  max-width: 100%;
+}
+
+.blog-post pre {
+  border-radius: .25rem;
+  padding: .5rem .5rem .5rem .75rem;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.blog-main {
+  flex: 1;
+}
+
+.blog-header nav {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+footer nav {
+  padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
+}
+

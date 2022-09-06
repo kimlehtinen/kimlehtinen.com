@@ -1,0 +1,8 @@
+{{ if .Params.categories }}
+<div class="blog-post-categories text-secondary">
+    <i class="fa fa-folder" aria-hidden="true"></i>
+    {{ range .Params.categories }}
+        <a class="btn btn-secondary btn-small badge" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+</div>
+{{ end }}
