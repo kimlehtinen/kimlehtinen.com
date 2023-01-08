@@ -69,7 +69,7 @@ if __name__ == '__main__':
 In case you use SQLite and run into errors either when downgrading or upgrading your database, you should be aware that SQLite doesn’t have implementation for all operations and commands. I suggest reading [this blog post by Miguel Grinberg](https://blog.miguelgrinberg.com/post/fixing-alter-table-errors-with-flask-migrate-and-sqlite) for more information about SQLite limitations, and how to overcome them. I will not go deeper into that topic here, since readers of this post use all kinds of databases. My personal recommendation is to use Postgres for Flask applications.
 
 ## Initializing database repository
-Next, we initialize our database repository using flask db init command. This will create a migrations/ folder, where all migration files will be generated and live.
+Next, we initialize our database repository using flask db init command. This will create a `migrations/` folder, where all migration files will be generated and live.
 
 ```shell
 $ python3 -m flask db init
