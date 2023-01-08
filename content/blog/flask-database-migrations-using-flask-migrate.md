@@ -180,7 +180,7 @@ INFO  [alembic.runtime.migration] Running downgrade 0bad09eca9b4 -> da0e365b163c
 
 And if you want to return back to latest, just run flask db upgrade as we did earlier.
 
-```
+```shell
 $ python3 -m flask db upgrade
 INFO  [alembic.runtime.migration] Running upgrade da0e365b163c -> 0bad09eca9b4, empty message
 ```
