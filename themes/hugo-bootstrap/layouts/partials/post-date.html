@@ -1,8 +1,17 @@
 {{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "date_format") }}
 
+{{ $date := .Date.UTC.Format "Jan 2, 2006" }}
+{{ $lastmod := .Lastmod.UTC.Format "Jan 2, 2006" }}
+
 {{ $author := .Params.author | default .Site.Params.author }}
 <div class="blog-post-date text-secondary">
     {{ if not .Date.IsZero }}
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
+    {{ end }}
+
+    {{ if and (ne $lastmod $date) (gt .Lastmod .Date) }}
+    <div class="mt-2 mb-2">
+    Last updated: <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Lastmod.Format $dateFormat }}</time>
+    </div>
     {{ end }}
 </div>
