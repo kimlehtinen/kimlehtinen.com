@@ -53,7 +53,7 @@ class TodoRepository:
 
 The todo items will come from an external API available [here](https://jsonplaceholder.typicode.com/todos). The API endpoint response returns a list of todo items in JSON-format as shown in the image below.
 
-![Todo Api](/img/todo-api.png "Todo Api")
+![Todo Api](./todo-api.png "Todo Api")
 
 
 Next, we create the implementation class that implements TodoRepository. Using requests-library, it sends an HTTP GET-request to the external API endpoint that provides a list of todo objects. Each todo-item is converted to our Todo-model format, and finally we return this list of todo-items.
