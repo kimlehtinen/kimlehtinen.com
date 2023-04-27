@@ -27,10 +27,6 @@ defaultContentLanguage = "en"
     url = "/about/"
     name = "About"
     weight = 3
-  [[languages.en.menu.main]]
-    url = "/recommended-books/"
-    name = "Recommended Books"
-    weight = 4
 
 # Pagination
 paginate = 3
