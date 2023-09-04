@@ -42,11 +42,11 @@ class Todo:
 ```
 
 Let’s create an interface TodoRepository. The purpose of this interface is for the consumers to use as a dependency, where they don’t have to know the specifics of the implementation and its origin.
-from src.todo.todo import Todo
  
 ```python
+from src.todo.todo import Todo
+
 class TodoRepository:
- 
     def get_todos() -> "list[Todo]":
         raise NotImplementedError
 ```
@@ -78,10 +78,11 @@ class TodoApiClient(TodoRepository):
 ```
 
 Now it’s time to create a Service-class that uses the TodoRepistory interface. Notice that this class doesn’t need to know how the TodoRepository dependency is provided to this component, we just want to consume it. In addition, we are not interested from where the todo-items come from, we just want to use the interface, and only care what it can do for us. In this case we just need to know that we will get a list of todo-items. The TodoService has one method, which is to find a todo-item based on id in the list of todos.
-from src.todo.todo_repository import TodoRepository
-from src.todo.todo import Todo
  
 ```python
+from src.todo.todo_repository import TodoRepository
+from src.todo.todo import Todo
+
 class TodoService:
     _todo_repository: TodoRepository
  
