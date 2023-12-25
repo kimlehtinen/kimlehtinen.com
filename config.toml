@@ -33,9 +33,9 @@ paginate = 3
 paginatePath = "page"
 
 [params]
-  description = 'Follow along my journey on learning and specialising in backend development and Cloud Native Computing.'
+  description = 'Follow along my journey as a Software Engineer working in the energy and industrial sector.'
   images = ['img/containers.jpg']
-  title = 'Software Cloud & DevOps'
+  title = 'Harnessing Technology for a Better Tomorrow'
 
   enableComments = false
 
