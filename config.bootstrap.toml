@@ -1,0 +1,94 @@
+baseURL = 'https://kimlehtinen.com/'
+languageCode = 'en-us'
+title = 'Kim Lehtinen'
+theme = 'hugo-bearcub'
+defaultContentLanguage = "en"
+
+
+[permalinks]
+  blog = '/:title/'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[languages.en]
+  languageName = "English"
+
+  [[languages.en.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/blog/"
+    name = "Blog"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 3
+
+# Pagination
+paginate = 3
+paginatePath = "page"
+
+[params]
+  description = 'Follow along my journey as a Software Engineer working in the energy and industrial sector.'
+  images = ['img/containers.jpg']
+  title = 'Harnessing Technology for a Better Tomorrow'
+
+  enableComments = false
+
+  [[params.socialLinks]]
+    url = "https://twitter.com/kimlehtinen"
+    icon = "fa fa-twitter"
+
+  [[params.socialLinks]]
+    url = "https://github.com/kimlehtinen"
+    icon = "fa fa-github"
+
+  [[params.socialLinks]]
+    url = "https://www.linkedin.com/in/kim-lehtinen/"
+    icon = "fa fa-linkedin"
+
+  [[params.socialLinks]]
+    url = "mailto:kim@kimlehtinen.com"
+    icon = "fa fa-envelope"
+
+  [[params.socialLinks]]
+    url = "/index.xml"
+    icon = "fa fa-rss"
+
+  # Main sections (currently used for the recent posts in the sidebar)
+  mainSections = ["blog"]
+
+  # Default author
+  author = "Kim Lehtinen"
+
+  # Date format (default: Jan 2, 2006)
+  # date_format = "Jan 2, 2006"
+
+  # Display post summaries instead of content in list templates (default: true)
+  # truncate = false
+
+  [params.sidebar]
+    # Whether to show the recent posts or not (default: true)
+    # showRecent = false
+
+    # Whether to show the taxonomies or not (default: true)
+    # showTaxonomy = false
+
+    # How many posts to show on the sidebar (Default: 5)
+    # num_recent_posts = 5
+
+  [params.header]
+    # Color scheme for the header (default: "light")
+    # colorScheme = "dark"
+
+  [params.footer]
+    # Color scheme for the footer (default: "light")
+    # colorScheme = "dark"
+
+    
+
+

@@ -1,94 +1,96 @@
-baseURL = 'https://kimlehtinen.com/'
-languageCode = 'en-us'
-title = 'Kim Lehtinen'
-theme = 'hugo-bootstrap'
-defaultContentLanguage = "en"
+baseURL = "https://kimlehtinen.com/"
+# title = "Kim Lehtinen"
+author = "Kim Lehtinen"
+copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
 
+# ------------------------------
+theme = "paper"
+title = "Kim Lehtinen"
 
 [permalinks]
   blog = '/:title/'
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
-[languages.en]
-  languageName = "English"
-
-  [[languages.en.menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
-  [[languages.en.menu.main]]
-    url = "/blog/"
-    name = "Blog"
-    weight = 2
-  [[languages.en.menu.main]]
-    url = "/about/"
-    name = "About"
-    weight = 3
-
-# Pagination
-paginate = 3
-paginatePath = "page"
-
 [params]
-  description = 'Follow along my journey as a Software Engineer working in the energy and industrial sector.'
-  images = ['img/containers.jpg']
-  title = 'Harnessing Technology for a Better Tomorrow'
+  color = 'linen'
 
-  enableComments = false
+  twitter = 'kimlehtinen'
+  github = 'kimlehtinen'
+  linkedin = 'kim-lehtinen'
+  rss = ''
+  #instagram = 'nan.xiaobei'
+  mail = 'kim@kimlehtinen.com'
 
-  [[params.socialLinks]]
-    url = "https://twitter.com/kimlehtinen"
-    icon = "fa fa-twitter"
+  avatar = 'kim@kimlehtinen.com'
+  name = 'Kim Lehtinen'
+  bio = "Hello! I'm Kim Lehtinen, a Software Engineer working within the energy and industrial sector, trying to make the world a better place through technology."
+# ------------------------------
 
-  [[params.socialLinks]]
-    url = "https://github.com/kimlehtinen"
-    icon = "fa fa-github"
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
 
-  [[params.socialLinks]]
-    url = "https://www.linkedin.com/in/kim-lehtinen/"
-    icon = "fa fa-linkedin"
+[menu]
 
-  [[params.socialLinks]]
-    url = "mailto:kim@kimlehtinen.com"
-    icon = "fa fa-envelope"
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 11
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 12
+#  [[menu.main]]
+#    identifier = "contact"
+#    name = "Contact"
+#    url = "/contact/"
+#    weight = 14
 
-  [[params.socialLinks]]
-    url = "/index.xml"
-    icon = "fa fa-rss"
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
 
-  # Main sections (currently used for the recent posts in the sidebar)
-  mainSections = ["blog"]
+[privacy]
 
-  # Default author
-  author = "Kim Lehtinen"
+  [privacy.vimeo]
+    disabled = false
+    simple = true
 
-  # Date format (default: Jan 2, 2006)
-  # date_format = "Jan 2, 2006"
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
 
-  # Display post summaries instead of content in list templates (default: true)
-  # truncate = false
+  [privacy.instagram]
+    disabled = false
+    simple = true
 
-  [params.sidebar]
-    # Whether to show the recent posts or not (default: true)
-    # showRecent = false
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
 
-    # Whether to show the taxonomies or not (default: true)
-    # showTaxonomy = false
+[services]
 
-    # How many posts to show on the sidebar (Default: 5)
-    # num_recent_posts = 5
+  [services.instagram]
+    disableInlineCSS = true
 
-  [params.header]
-    # Color scheme for the header (default: "light")
-    # colorScheme = "dark"
-
-  [params.footer]
-    # Color scheme for the footer (default: "light")
-    # colorScheme = "dark"
-
-    
-
-
+  [services.twitter]
+    disableInlineCSS = true

@@ -1,0 +1,14 @@
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        {{ if gt (len $taxonomy) 0 }}
+
+        {{ $capitalizedTaxonomyName := title $taxonomyname }}
+        <h4>{{ $capitalizedTaxonomyName }}:</h4>
+        <p>
+            {{ range $name, $value := $taxonomy }}
+            <a href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            {{ end }}
+        </p>
+        {{ end }}
+    {{ end }}
+</section>
