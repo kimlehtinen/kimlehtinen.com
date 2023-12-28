@@ -1,7 +1,7 @@
 ---
 title: "Python Flask Dependency Injection"
 date: 2022-07-15T02:26:09+03:00
-categories: ["Flask", "Python"]
+categories: ["Programming", "Python"]
 tags: ["Flask", "Python"]
 description: "How to use dependency injection in Python Flask, and how unit test when using dependency injection"
 comments: false
