@@ -1,5 +1,6 @@
 ---
 title: "Loading Microsoft C/C++ DLLs in Windows Containers"
+slug: loading-microsoft-c-c-dlls-in-windows-containers
 date: 2024-03-09T22:50:40+03:00
 draft: false
 categories: ["Containers"]
