@@ -1,8 +1,9 @@
 # kimlehtinen.com
 
-Website URL: [https://kimlehtinen.com](https://kimlehtinen.com)
+My personal website & blog.
 
-Host URL (Cloudflare): [https://kimlehtinen.pages.dev](https://kimlehtinen.pages.dev)
+- Website URL: [https://kimlehtinen.com](https://kimlehtinen.com)
+- Host URL (Cloudflare): [https://kimlehtinen.pages.dev](https://kimlehtinen.pages.dev)
 
 ## Create new blog post
 ```
