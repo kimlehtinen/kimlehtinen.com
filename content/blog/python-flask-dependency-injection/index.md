@@ -6,6 +6,7 @@ tags: ["Flask", "Python"]
 description: "How to use dependency injection in Python Flask, and how unit test when using dependency injection"
 comments: false
 draft: false
+featured_image: "featured_image.webp"
 ---
 
 One the best features of Flask is that it’s a “microframework”, meaning it’s easy to get started and to extend as the project grows. However, sometimes projects grow so large that it becomes hard to maintain all the dependencies and coupling between components. This is where dependency injection can help, by decoupling components and dependencies. This will make the code more reusable and easier to test through mocking the interfaces that a component uses.

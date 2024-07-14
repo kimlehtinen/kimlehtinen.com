@@ -6,6 +6,7 @@ tags: ["Flask", "Python", "Testing"]
 description: "Learn how to unit test Python Flask REST API applications using pytest, dependency injection and clean architecture."
 comments: false
 draft: false
+featured_image: "featured_image.webp"
 ---
 
 For the longest time I haven't found good examples online on how to unit test [Flask](https://flask.palletsprojects.com) applications. Especially when following clean architecture, and when using dependency injection. That is why I decided to write this post. Flask is a minimalistic web framework, so I understand that most examples are small and simple. However, I know there are people out there building larger and more complex applications that requires good quality code, clean architecture and maintainability over time. Testing applications is an important aspect for achieving this.

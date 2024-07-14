@@ -6,6 +6,8 @@ draft: false
 categories: ["Containers"]
 tags: ["Containers", "Python", "Windows"]
 description: "How to solve problems loading Dynamic Link Libraries (DLLs) built using Microsoft C/C++ tools within Windows Containers."
+images:
+- "featured_image.webp"
 ---
 
 In the past few days, I have been working with Windows containers, and I have been facing issues with loading certain DLLs in these containers from my applications. It has been the classic “It works on my machine” problem, meaning it has been working without any issues on my host Windows machine. However, when running the same setup in Windows containers, the story has been different.

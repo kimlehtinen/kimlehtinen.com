@@ -6,6 +6,7 @@ tags: ["Alembic", "Flask", "Python", "SQLAlchemy"]
 description: "Learn how Flask-Migrate and alembic database migration tool can be used for automatic database migrations for Flask SQLAlchemy applications."
 comments: false
 draft: false
+featured_image: "featured_image.webp"
 ---
 
 [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/) is a python package that configures [SQLAlchemy](https://www.sqlalchemy.org/) and [Alembic](https://alembic.sqlalchemy.org/en/latest/) for your Flask application. Alembic is the migration tool that actually takes care of database migrations under the hood. It can automatically generate migration files based on database schema models, and apply those migrations to databases. **This is truly powerful, since it enables you to have a single source of truth and a history of your database changes in source control**. Using a database migration tool, you are able to easily upgrade or downgrade database changes, or even rebuild your database.
