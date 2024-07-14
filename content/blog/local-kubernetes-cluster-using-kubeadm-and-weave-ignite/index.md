@@ -6,7 +6,8 @@ tags: ["Kubernetes", "Kubeadm", "Ignite"]
 description: "How to create a three node Kubernetes cluster using kubeadm and Weave Ignite firecracker VMs"
 draft: false
 comments: false
-featured_image: "featured_image.webp"
+images:
+- "featured_image.webp"
 ---
 
 As someone who is just learning Kubernetes, I want a local cluster where I can learn the basics of Kubernetes by testing and breaking things! I have lately been testing different tools for creating local kubernets clusters, and there are many good tools for doing so. However, many of them only spin up a single node cluster, I wanted multiple nodes. In addition, many tools make it difficult to control the amount of ram and cpu in each node.
