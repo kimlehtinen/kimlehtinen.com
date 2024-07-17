@@ -29,7 +29,7 @@ title = "Kim Lehtinen"
 
   avatar = 'kim@kimlehtinen.com'
   name = 'Kim Lehtinen'
-  bio = "Hello! I'm Kim Lehtinen, a Software Engineer working within the energy and industrial sector, trying to make the world a better place through technology."
+  bio = "Hello! I'm Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I focus on backend and cloud technologies, and most of my experience is in industrial and energy sector."
 # ------------------------------
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
