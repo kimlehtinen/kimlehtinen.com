@@ -14,3 +14,8 @@ hugo new blog/<title>/index.md
 ```
 hugo serve -D
 ```
+
+## Submodules
+```
+git submodule update --init --recursive
+```
