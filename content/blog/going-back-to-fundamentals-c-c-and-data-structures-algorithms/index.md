@@ -3,7 +3,7 @@ title: "Going Back to Fundamentals: C/C++ and Data Structures & Algorithms"
 date: 2024-09-17T16:20:21+03:00
 draft: false
 categories: ["Software Engineering"]
-tags: ["Data Structures", "Algorithms", "C++"]
+tags: ["Data Structures & Algorithms", "C++"]
 comments: false
 images:
 - "back_to_fundamentals.webp"
