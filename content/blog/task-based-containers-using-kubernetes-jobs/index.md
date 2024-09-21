@@ -2,7 +2,7 @@
 title: "Task-based containers using Kubernetes Jobs"
 date: 2023-04-27T22:26:42+03:00
 draft: false
-categories: ["Containers", "Kubernetes"]
+categories: ["Cloud & Infrastructure", "Containers", "Kubernetes"]
 tags: ["Containers", "Kubernetes", "Python"]
 description: "Using Kubernetes Jobs for running task-based container workloads at scale, that are able to scale and run for a long time."
 images:

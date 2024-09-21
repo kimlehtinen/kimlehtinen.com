@@ -3,7 +3,7 @@ title: "Loading Microsoft C/C++ DLLs in Windows Containers"
 slug: loading-microsoft-c-c-dlls-in-windows-containers
 date: 2024-03-09T22:50:40+03:00
 draft: false
-categories: ["Containers"]
+categories: ["Cloud & Infrastructure", "Containers"]
 tags: ["Containers", "Python", "Windows"]
 description: "How to solve problems loading Dynamic Link Libraries (DLLs) built using Microsoft C/C++ tools within Windows Containers."
 images:
