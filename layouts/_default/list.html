@@ -65,7 +65,7 @@
   {{ end }}
   <h2 class="!my-0 pb-1 font-bold !leading-none"><a style="text-decoration: none;" href="{{ .Permalink }}">{{ .Title }}</a></h2>
 
-  {{ partial "post-categories" . }}
+  {{ partial "post-tags" . }}
 
   <time class="text-sm antialiased opacity-60"
     >{{ .Date | time.Format ":date_medium" }}</time

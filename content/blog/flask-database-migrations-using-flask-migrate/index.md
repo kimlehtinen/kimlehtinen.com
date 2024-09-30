@@ -1,8 +1,11 @@
 ---
 title: "Flask database migrations using Flask-Migrate"
 date: 2022-08-01T05:21:05+03:00
-categories: ["Programming", "Python"]
-tags: ["Alembic", "Flask", "Python", "SQLAlchemy"]
+categories:
+- "Software Engineering"
+tags:
+- "Flask"
+- "Python"
 description: "Learn how Flask-Migrate and alembic database migration tool can be used for automatic database migrations for Flask SQLAlchemy applications."
 comments: false
 draft: false

@@ -6,7 +6,8 @@
         <h4>{{ $capitalizedTaxonomyName }}:</h4>
         <p>
             {{ range $name, $value := $taxonomy }}
-            <a href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            {{ $term := index $.Site.Taxonomies $taxonomyname $name }}
+            <a href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $term.Page.Title }}</a>
             {{ end }}
         </p>
         {{ end }}

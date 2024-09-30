@@ -2,11 +2,15 @@
 title: "Going Back to Fundamentals: C/C++ and Data Structures & Algorithms"
 date: 2024-09-17T16:20:21+03:00
 draft: false
-categories: ["Software Engineering"]
-tags: ["Data Structures & Algorithms", "C++"]
+slug: "going-back-to-fundamentals-c-c-and-data-structures-algorithms"
+categories:
+- "Software Engineering"
+tags:
+- "Data Structures & Algorithms"
+- "C++"
 comments: false
 images:
-- "back_to_fundamentals.webp"
+- "featured_image.webp"
 ---
 
 The last few years, I've mostly been writing Python and JavaScript at work. Don’t get me wrong—these languages are versatile and powerful, perfect for a wide range of applications. But if there’s one thing I’ve noticed, it’s how easy it is to lose touch with the fundamentals of how computers work. Python and JavaScript abstract so much of the lower-level details, making it comfortable to code without ever digging deeper into the underlying mechanics of computers.

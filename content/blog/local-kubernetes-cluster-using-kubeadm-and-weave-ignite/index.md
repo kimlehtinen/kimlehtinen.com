@@ -1,8 +1,10 @@
 ---
 title: "Local Kubernetes cluster using kubeadm and Weave Ignite"
 date: 2022-03-09T11:07:10+03:00
-categories: ["Cloud & Infrastructure", "Kubernetes"]
-tags: ["Kubernetes", "Kubeadm", "Ignite"]
+categories:
+- "Cloud & Infrastructure"
+tags:
+- "Kubernetes"
 description: "How to create a three node Kubernetes cluster using kubeadm and Weave Ignite firecracker VMs"
 draft: false
 comments: false

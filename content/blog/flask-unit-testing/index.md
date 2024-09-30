@@ -1,8 +1,12 @@
 ---
 title: "Flask Unit Testing"
 date: 2023-03-31T20:34:52+03:00
-categories: ["Programming", "Python"]
-tags: ["Flask", "Python", "Testing"]
+categories:
+- "Software Engineering"
+tags:
+- "Flask"
+- "Python"
+- "Testing"
 description: "Learn how to unit test Python Flask REST API applications using pytest, dependency injection and clean architecture."
 comments: false
 draft: false
