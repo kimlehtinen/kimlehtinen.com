@@ -1,9 +1,0 @@
-{{if isset .Params "images" }}
-<div class="featured_image">
-    <a href="{{ .Permalink }}" title="{{ .Title }}">
-        <div class="aspect-ratio-container">
-            <img src="{{ .Permalink }}/{{ index .Params.images 0 }}" class="aspect-ratio-image">
-        </div>
-    </a>
-</div>
-{{ end }}

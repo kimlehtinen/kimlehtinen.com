@@ -73,7 +73,7 @@ mydll.hello_world()
 
 When running this script on our host, we can see that it works.
 
-```
+```text
 python .\app.py
 
 Hello World!
@@ -121,19 +121,19 @@ Here you can see my whole project structure
 
 Now we can start the container
 
-```
+```text
 docker-compose up --build -d
 ```
 
 The windows container has been started in the background, so let’s go inside it and start a powershell session
 
-```
+```text
 docker-compose exec windows-python powershell
 ```
 
 Now you should be able to see same files in container just like in host, since we mounted the whole working directory (for demo purposes).
 
-```
+```text
 PS C:\user\src\app> ls
 
 
@@ -150,7 +150,7 @@ d-----          3/7/2024  10:34 PM                lib
 
 Now if we run the python script in Windows container, we can see that it fails. It says it can’t find the DLL, even if it is there and is referenced correctly. It mentions “…or one of its dependencies”, but I created the most simple DLL, it should work as is…right?
 
-```
+```text
 PS C:\user\src\app> python .\app.py
 Traceback (most recent call last):
   File "C:\user\src\app\app.py", line 3, in <module>
@@ -174,7 +174,7 @@ The following things are good things to check:
 
 The first ones are easy to check. Architecture can be checked in Visual Studio when building the DLL, make sure that you have selected 64 or 32 bit depending on where you intend to run it, most likely it is 64bit. If you haven’t built the DLL yourself, Visual Studio Developer Powershell terminal has dumpbin tool that can be used to check this. Since I built this for 64bit, I check here that I find `8664 machine (x64)`, and there it is!
 
-```
+```text
 dumpbin /HEADERS .\x64\Release\MyDLL.dll
 
 Microsoft (R) COFF/PE Dumper Version 14.38.33134.0
@@ -196,7 +196,7 @@ When I had come this far, I started giving up. However, after hours and hours of
 
 I decided to compare my container and host to see what redistributables I have. First I checked the host, and that can be done with the following query below. We can see that a bunch of them are installed as I have Visual Studio installed on my host machine.
 
-```
+```text
 Get-WmiObject -Query "SELECT * FROM Win32_Product WHERE Name LIKE '%Microsoft Visual C++%'" | Select-Object Name, Version
 
 Name                                                           Version
@@ -211,13 +211,13 @@ Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.38.33130    14.38.33130
 
 Next, I ran the same thing in container
 
-```
+```text
 PS C:\user\src\app> Get-WmiObject -Query "SELECT * FROM Win32_Product WHERE Name LIKE '%Microsoft Visual C++%'" | Select-Object Name, Version
 ```
 
 Tadaa, empty output! And to be even more sure, one can use dumpbin on the DLL to check dependencies
 
-```
+```text
 dumpbin /DEPENDENTS .\x64\Release\MyDLL.dll
 
 Microsoft (R) COFF/PE Dumper Version 14.38.33134.0
