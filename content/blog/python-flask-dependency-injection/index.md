@@ -157,7 +157,7 @@ if __name__ == "__main__":
 
 Now it’s time to start our Flask-server!
 
-```shell
+```text
 $ python3 app.py
  * Serving Flask app 'app' (lazy loading)
  * Environment: production
@@ -172,7 +172,7 @@ $ python3 app.py
 
 Now if we call our API-endpoint we will receive a todo-item as response. Every time we change the todo item id we get a new todo-item as response.
 
-```bash
+```text
 $ curl http://localhost:5000/todo/1
 {
   "completed": false, 
@@ -223,7 +223,7 @@ def test_get_todo__finds_todo():
 
 Now let’s run the test!
 
-```bash
+```text
 $ python -m pytest
 ======================================== test session starts ========================================
 platform linux -- Python 3.8.10, pytest-7.1.2, pluggy-1.0.0

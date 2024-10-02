@@ -267,7 +267,7 @@ foreach ($dllName in $dllNames) {
 
 All are missing except one!
 
-```
+```text
 PS C:\user\src\app> .\check-dll-deps.ps1                                                                                             
 MSVCP140.dll does NOT exist.                                                                                                         
 VCRUNTIME140_1.dll does NOT exist.                                                                                                   
@@ -318,7 +318,7 @@ CMD ["ping", "-t", "localhost"]
 
 Now let’s rebuild the container and go inside it
 
-```
+```text
 docker-compose down
 docker-compose up --build -d
 docker-compose exec windows-python powershell
@@ -326,14 +326,14 @@ docker-compose exec windows-python powershell
 
 Now we if run the Python script again in the container, we can see that it is able to load the DLL and run the hello world function! Finally!
 
-```
+```text
 PS C:\user\src\app> python .\app.py                                                                                                  
 Hello World!
 ```
 
 If we check the installed Visual C++ redistributables now in the container, we can see them listed this time
 
-```
+```text
 PS C:\user\src\app> Get-WmiObject -Query "SELECT * FROM Win32_Product WHERE Name LIKE '%Microsoft Visual C++%'" | Select-Object Name, Version                                                                                                                                                                                                                                                                  
 Name                                                           Version                                                               
 ----                                                           -------                                                               
@@ -343,7 +343,7 @@ Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.38.33135    14.38.33135
 
 And the runtime dependencies listed by `dumpbin` are existing now in the container as well. Only one is missing this time, however that one doesn’t seem to affect the application.
 
-```
+```text
 PS C:\user\src\app> .\check-dll-deps.ps1                                                                                             
 MSVCP140.dll exists.                                                                                                                 
 VCRUNTIME140_1.dll exists.                                                                                                           

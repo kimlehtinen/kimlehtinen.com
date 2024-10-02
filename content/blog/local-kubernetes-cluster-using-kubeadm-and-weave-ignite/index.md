@@ -22,7 +22,7 @@ I threw together some bash scripts to create a 3-node kubernetes cluster using W
 
 Note: Ignite needs to be run as root user, make sure all commands and scripts are run as root. In addition, Ignite can only be used on Linux!
 
-```bash
+```text
 sudo -i
 ```
 
@@ -130,13 +130,13 @@ done
 
 Whenever you are ready, run the main script!
 
-```bash
+```text
 chmod +x install.sh && ./install.sh
 ```
 
 check the Ignite VMs
 
-```bash
+```text
 root@latitude:/home/kle/projects/kubeadm-ignite# ignite ps
 VM ID            IMAGE                    KERNEL                    SIZE    CPUS    MEMORY        CREATED        STATUS        IPS        PORTS    NAME
 2166bb876082c0d5    weaveworks/ignite-kubeadm:latest    weaveworks/ignite-kernel:4.19.1254.0 GB    2    1024.0 MB    6m9s ago    Up 6m9s        10.61.0.42        worker1
@@ -146,7 +146,7 @@ c38cd0c0ba385be7    weaveworks/ignite-kubeadm:latest    weaveworks/ignite-kernel
 
 ssh into master
 
-```bash
+```text
 root@latitude:/home/kle/projects/kubeadm-ignite# ignite ssh master
 Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.19.125 x86_64)
  * Documentation:  https://help.ubuntu.com
@@ -159,7 +159,7 @@ To restore this content, you can run the 'unminimize' command.
 
 check nodes
 
-```bash
+```text
 root@ace841b9057e9117:~# kubectl get nodes
 NAME               STATUS   ROLES                  AGE     VERSION
 2166bb876082c0d5   Ready    <none>                 2m29s   v1.20.0

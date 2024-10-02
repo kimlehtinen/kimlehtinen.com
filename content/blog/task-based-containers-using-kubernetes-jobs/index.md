@@ -67,7 +67,7 @@ CMD ["5"]
 
 The Kubernetes client for Python can be installed using `pip`.
 
-```shell
+```text
 pip install kubernetes
 ```
 
@@ -148,14 +148,14 @@ k8s_client.create_job(seconds=15)
 
 Before running the script, we can see that no Jobs or Pods are running in the default namespace of the cluster.
 
-```shell
+```text
 $ kubectl get all
 NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S) 
 service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP 
 ```
 
 Let's run the script that creates 3 Jobs!
-```shell
+```text
 $ python3 create_task.py 
 Created: job-9bd258f9-4f48-471c-8429-6327be03c8a7-5s
 Created: job-92ade60e-e1a6-4cb8-85fa-8a62a9b3016a-10s
@@ -164,7 +164,7 @@ Created: job-c583e785-e993-4cb8-9594-4d7fc084f446-15s
 
 Now if we check the default namespace, we see that 3 Jobs are currently running. Each `Job` has its corresponding `Pod` running the actual task. The Jobs `COMPLETIONS` column shows if the task is completed or not.
 
-```shell
+```text
 $ kubectl get all
 NAME                                                     READY   STATUS    RESTARTS   AGE
 pod/job-92ade60e-e1a6-4cb8-85fa-8a62a9b3016a-10s-5f7lt   1/1     Running   0          11s
@@ -182,7 +182,7 @@ job.batch/job-c583e785-e993-4cb8-9594-4d7fc084f446-15s   0/1           11s      
 
 If we wait for a while, we see that the Jobs and Pods change to completed state.
 
-```shell
+```text
 $ kubectl get all
 NAME                                                     READY   STATUS      RESTARTS   AGE
 pod/job-92ade60e-e1a6-4cb8-85fa-8a62a9b3016a-10s-5f7lt   0/1     Completed   0          34s
@@ -200,7 +200,7 @@ job.batch/job-c583e785-e993-4cb8-9594-4d7fc084f446-15s   1/1           30s      
 
 We can see from the logs that the task has been executed
 
-```shell
+```text
 $ kubectl logs job.batch/job-c583e785-e993-4cb8-9594-4d7fc084f446-15s
 Running task for 15 seconds...
 Task done!
@@ -208,7 +208,7 @@ Task done!
 
 The Jobs were configured to be automatically deleted 60 seconds after completion. If you wait for 60 seconds after the last job has completed, you will see that Kubernetes has removed all resources related to these 3 Jobs.
 
-```shell
+```text
 $ kubectl get all
 NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)
 service/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP 

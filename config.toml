@@ -41,9 +41,14 @@ ignoreErrors = ["error-disable-taxonomy"]
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
   title = "Kim Lehtinen"
 
+  copyright = "Copyright &copy; 2024 - Kim Lehtinen"
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
-  # hideMadeWithLine = true
+  hideMadeWithLine = true
+
+  [[params.tagAliases]]
+    name = "C++"
+    slug = "cpp"
 
   # By default, this theme displays dates with a format like "02 Jan, 2006", but
   # you can customize it by setting the `dateFormat` param in your site's config

@@ -29,7 +29,7 @@ The example application shown here is a REST API Flask application, using [depen
 ## Application setup
 Below is the application structure used. How to structure applications is subjective, this is just how I like to structure mine. The source code `src` is divided into different packages. Dependency injection code goes into `di`, anything interacting with external processes (database, files etc) goes into `infra`, API endpoints goes into `web`, and business logic packages under `modules`. In addition, test code is placed into `tests`, and follows a similar structure so that the code we are testing have corresponding test files. Notice that `pytest` test files have file name prefix `test_*`. For more details about application setup, check the [Git repository](https://github.com/kimlehtinen/blog-code/tree/main/flask-unit-testing).
 
-```
+```text
 ├── app.py
 ├── db.py
 ├── migrations
@@ -59,7 +59,7 @@ Below is the application structure used. How to structure applications is subjec
 ```
 
 The following are the Python packages used.
-```
+```text
 Flask==2.2.3
 pytest==7.2.2
 Flask-Migrate==4.0.4
