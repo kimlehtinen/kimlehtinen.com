@@ -7,7 +7,7 @@ categories:
 - "Software Engineering"
 tags:
 - "Data Structures & Algorithms"
-- "C++"
+- "cpp"
 comments: false
 images:
 - "featured_image.webp"

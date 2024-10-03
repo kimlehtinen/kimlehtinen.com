@@ -8,6 +8,17 @@ theme = 'hugo-bearblog'
 # Basic metadata configuration for your blog.
 title = "Kim Lehtinen"
 author = "Kim Lehtinen"
+
+[social]
+  name = "Kim Lehtinen"
+  github = "kimlehtinen"
+  gitlab = ""
+  linkedin = "kimlehtinen"
+  facebook = ""
+  twitter = "kimlehtinen"
+  instagram = ""
+  rss = "/index.xml"
+
 copyright = "Copyright © 2024, Kim Lehtinen."
 languageCode = "en-US"
 
@@ -28,13 +39,13 @@ ignoreErrors = ["error-disable-taxonomy"]
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
-  favicon = "images/favicon.png"
+  favicon = "favicon.ico"
 
   # These "images" are used for the structured data templates. This will show up, when
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph.
-  images = ["images/share.png"]
+  images = ["images/kimlehtinen.jpg"]
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.

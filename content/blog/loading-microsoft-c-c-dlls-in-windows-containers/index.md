@@ -8,7 +8,7 @@ categories:
 tags:
 - "Containers"
 - "Windows"
-- "C++"
+- "cpp"
 description: "How to solve problems loading Dynamic Link Libraries (DLLs) built using Microsoft C/C++ tools within Windows Containers."
 images:
 - "featured_image.webp"

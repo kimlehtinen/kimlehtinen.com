@@ -1,6 +1,8 @@
 ---
-title: Home
+title: Software, Cloud & Engineering
 weight: 1
 ---
 
-Hello! I'm Kim Lehtinen, a Software Engineer based in Finland, working mainly in the energy and industrial sector. My core belief is that everyone possesses a unique superpower, a distinct ability to contribute positively to our world. That's what I aspire to do through technology, and hope I can inspire others along the way to do the same.
+# Software, Cloud & Engineering
+
+Hello! I’m Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I mostly work with backend and cloud technologies, and most of my experience is in industrial sector. I help companies gain a competitive advantage through software, automation & cloud. Every now and then I find time to write blog posts.

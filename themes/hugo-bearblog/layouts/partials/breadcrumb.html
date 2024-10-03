@@ -1,0 +1,20 @@
+<nav aria-label="breadcrumb"></nav>
+    <span class="breadcrumb">
+      <a href="{{ .Site.BaseURL }}">Home</a> /
+      {{ $categories := .Params.categories }}
+      {{ if $categories }}
+        {{ $category := index $categories 0 }}
+        {{ $categoryPage := (where .Site.Pages "Section" "categories" | first 1) }}
+        {{ if $categoryPage }}
+          {{ range $categoryPage }}
+            {{ if eq .Title $category }}
+              <a href="{{ .Permalink }}">{{ $category }}</a> /
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          <a href="{{ printf "/category/%s" $category | urlize }}">{{ $category }}</a> /
+        {{ end }}
+      {{ end }}
+      <span>{{ .Title }}</span>
+    </span>
+  </nav>
