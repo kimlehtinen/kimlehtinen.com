@@ -1,2 +1,7 @@
+<a class="manage-consent" href="#manage-consent">Manage Consent</a>
+<a href="#" onclick="eraseCookie('consent-settings'); location.reload();">Reset Cookies</a>
+<a href="/privacy-policy">Privacy Policy</a>
+<a href="/cookie-policy">Cookie Policy</a>
+
 {{ if ne .Site.Params.hideMadeWithLine true }}Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{ end }}
 <p>{{ .Site.Params.copyright | safeHTML }}</p>
