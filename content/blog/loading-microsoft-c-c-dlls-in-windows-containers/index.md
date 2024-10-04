@@ -1,17 +1,17 @@
 ---
 title: "Loading Microsoft C/C++ DLLs in Windows Containers"
-slug: loading-microsoft-c-c-dlls-in-windows-containers
+slug: "loading-microsoft-c-c-dlls-in-windows-containers"
 date: 2024-03-09T22:50:40+03:00
+description: "How to solve problems loading Dynamic Link Libraries (DLLs) built using Microsoft C/C++ tools within Windows Containers."
 draft: false
 categories:
-- "Cloud & Infrastructure"
+  - "Cloud & Infrastructure"
 tags:
-- "Containers"
-- "Windows"
-- "cpp"
-description: "How to solve problems loading Dynamic Link Libraries (DLLs) built using Microsoft C/C++ tools within Windows Containers."
+  - "Containers"
+  - "Windows"
+  - "cpp"
 images:
-- "featured_image.webp"
+  - "featured_image.webp"
 ---
 
 In the past few days, I have been working with Windows containers, and I have been facing issues with loading certain DLLs in these containers from my applications. It has been the classic “It works on my machine” problem, meaning it has been working without any issues on my host Windows machine. However, when running the same setup in Windows containers, the story has been different.
