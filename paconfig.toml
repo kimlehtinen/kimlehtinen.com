@@ -1,0 +1,119 @@
+baseURL = "https://hugo-paper.vercel.app/"
+# title = "Hugo Themes"
+author = "Kim Lehtinen"
+copyright = "© 2024, Kim Lehtinen"
+
+#languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# ------------------------------
+theme = "hugo-paper"
+title = "Kim Lehtinen"
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Kim Lehtinen'
+    weight = 1
+    [languages.en.params]
+      subtitle = 'Reference, Tutorials, and Explanations'
+      path = '/'
+  [languages.fi]
+    contentDir = 'content/fi'
+    disabled = false
+    languageCode = 'fi-FI'
+    languageDirection = 'ltr'
+    languageName = 'Suomi'
+    title = 'Kim Lehtinen'
+    weight = 2
+    [languages.fi.params]
+      subtitle = 'Referenz, Tutorials und Erklärungen'
+      path = '/fi'
+
+[permalinks]
+  blog = "/:slug/"
+  tags = "/tag/:slug"
+  categories = "/category/:slug"
+
+[pagination]
+  disableAliases = false
+  pagerSize = 5
+  path = 'page'
+
+[params]
+  color = 'linen'
+
+  twitter = 'kimlehtinen'
+  github = 'kimlehtinen'
+  linkedin = 'kimlehtinen'
+  rss = '/index.xml'
+
+avatar = 'kim@kimlehtinen.com'
+  name = 'Kim Lehtinen'
+  bio = 'Hello! I’m Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I mostly work with backend and cloud technologies, and most of my experience is in industrial sector. I help companies gain a competitive advantage through software, automation & cloud.'
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

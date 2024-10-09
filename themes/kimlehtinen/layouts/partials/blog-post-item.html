@@ -1,0 +1,9 @@
+<section class="blog-post-item">
+    <a class="" href="{{ .Permalink }}">
+    {{ if gt .Weight 0 }}
+    <span class="">Featured</span>
+    {{ end }}
+    <h3 class="">{{ .Title }}</h3>
+    <time class="">{{ .Date | time.Format ":date_medium" }}</time>
+   </a>
+</section>

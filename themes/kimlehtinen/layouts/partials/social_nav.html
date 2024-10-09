@@ -1,0 +1,15 @@
+{{ if .Site.Params.Social.twitter }}
+<a class="split social-link-desktop" href="https://twitter.com/{{ .Site.Params.Social.twitter }}"><i class="fab fa-x-twitter fa-lg" aria-hidden="true"></i></a>
+{{ end }} {{ if .Site.Params.Social.linkedin }}
+<a class="split social-link-desktop" href="https://www.linkedin.com/in/{{ .Site.Params.Social.linkedin }}"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+{{ end }} {{ if .Site.Params.Social.github }}
+<a class="split social-link-desktop" href="https://github.com/{{ .Site.Params.Social.github }}"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+{{ end }} {{ if .Site.Params.Social.facebook }}
+<a class="split social-link-desktop" href="https://www.facebook.com/{{ .Site.Params.Social.facebook }}"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a>
+{{ end }} {{ if .Site.Params.Social.instagram }}
+<a class="split social-link-desktop" href="https://instagram.com/{{ .Site.Params.Social.instagram }}"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+{{ end }} {{ if .Site.Params.Social.rss }}
+<a class="split social-link-desktop" href="{{ .Site.Params.Social.rss }}"><i class="fa-solid fa-rss fa-lg" aria-hidden="true"></i></a>
+{{ end }}
+
+{{ partial "social.html" . }}

@@ -3,27 +3,107 @@
 baseURL = "https://kimlehtinen.com"
 
 # The name of this wonderful theme ;-).
-theme = 'hugo-bearblog'
+theme = 'kimlehtinen'
 
 # Basic metadata configuration for your blog.
 title = "Kim Lehtinen"
 author = "Kim Lehtinen"
-
-[social]
-  name = "Kim Lehtinen"
-  github = "kimlehtinen"
-  gitlab = ""
-  linkedin = "kimlehtinen"
-  facebook = ""
-  twitter = "kimlehtinen"
-  instagram = ""
-  rss = "/index.xml"
 
 copyright = "Copyright © 2024, Kim Lehtinen."
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'en'
+    title = 'Kim Lehtinen'
+    weight = 1
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 10
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/blog/"
+        weight = 20
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+    weight = 30
+    [languages.en.params]
+      subtitle = 'Software, Cloud & Engineering'
+      path = '/'
+      name = 'Kim Lehtinen'
+      bio = 'Hello! I’m Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I mostly work with backend and cloud technologies, and most of my experience is in industrial sector. I help companies gain a competitive advantage through software, automation & cloud.'
+
+  [languages.fi]
+    contentDir = 'content/fi'
+    disabled = false
+    languageCode = 'fi-FI'
+    languageDirection = 'ltr'
+    languageName = 'fi'
+    title = 'Kim Lehtinen'
+    weight = 2
+    [languages.fi.menu]
+      [[languages.fi.menu.main]]
+        identifier = "home"
+        name = "Koti"
+        url = "/fi"
+        weight = 10
+      [[languages.fi.menu.main]]
+        identifier = "blog"
+        name = "Blogi"
+        url = "/fi/blogi/"
+        weight = 20
+      [[languages.fi.menu.main]]
+        identifier = "about"
+        name = "Minusta"
+        url = "/fi/minusta/"
+    [languages.fi.params]
+      subtitle = 'Referenz, Tutorials und Erklärungen'
+      path = '/fi'
+      name = 'Kim Lehtinen'
+      bio = 'Hei! Olen Kim Lehtinen, ohjelmistokehittäjä, joka pyrkii parantamaan maailmaa teknologian avulla. Työskentelen pääasiassa backend- ja pilviteknologioiden parissa, ja suurin osa kokemuksestani on teollisuusalalta. Autan yrityksiä saavuttamaan kilpailuetua ohjelmistojen, automaation ja pilvipalveluiden avulla.'
+
+  [languages.sv]
+    contentDir = 'content/sv'
+    disabled = false
+    languageCode = 'sv-SE'
+    languageDirection = 'ltr'
+    languageName = 'sv'
+    title = 'Kim Lehtinen'
+    weight = 2
+    [languages.sv.menu]
+      [[languages.sv.menu.main]]
+        identifier = "home"
+        name = "Hem"
+        url = "/sv"
+        weight = 10
+      [[languages.sv.menu.main]]
+        identifier = "blog"
+        name = "Blogg"
+        url = "/sv/blogg/"
+        weight = 20
+      [[languages.sv.menu.main]]
+        identifier = "about"
+        name = "Om mig"
+        url = "/sv/om-mig/"
+    [languages.sv.params]
+      subtitle = 'Referenz, Tutorials und Erklärungen'
+      path = '/sv'
+      name = 'Kim Lehtinen'
+      bio = 'Hej! Jag är Kim Lehtinen, en mjukvaruingenjör som försöker göra världen till en bättre plats genom teknologi. Jag arbetar främst med backend- och molnteknologier, och största delen av min erfarenhet är inom industrisektorn. Jag hjälper företag att få konkurrensfördelar genom mjukvara, automation och molntjänster.'
+
 
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
 disableKinds = ["taxonomy"]
@@ -34,6 +114,15 @@ ignoreErrors = ["error-disable-taxonomy"]
   categories = "/category/:slug"
 
 [params]
+  [params.social]
+    name = "Kim Lehtinen"
+    github = "kimlehtinen"
+    gitlab = ""
+    linkedin = "kimlehtinen"
+    facebook = ""
+    twitter = "kimlehtinen"
+    instagram = ""
+    rss = "/index.xml"
   # The "description" of your website. This is used in the meta data of your generated html.
   description = "Kim Lehtinen is a Software Engineer specializing in backend and cloud technologies."
 

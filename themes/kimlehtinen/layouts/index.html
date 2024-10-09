@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<div class="info-card">
+  <div class="image">
+    <img src="/images/kimlehtinen.jpg">
+  </div>
+  <div class="paragraph">
+    {{ site.Params.bio | default (print `A personal blog by `
+      site.Params.name) }}
+  </div>
+</div>
+
+<h2>Latest posts:</h2>
+{{ $latestPosts := first 3 (where .Site.RegularPages "Type" "blog") }}
+    {{ range $latestPosts }}
+    {{ partial "blog-post-item.html" . }}
+{{ end }}
+
+{{ end }}

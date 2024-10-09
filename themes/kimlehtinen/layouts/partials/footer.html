@@ -1,0 +1,22 @@
+<div class="footer-container">
+<ul class="site-links">
+    <li><a href="{{ "" | relURL }}">Home</a></li>
+    {{ with .Site.GetPage "/blog" }}
+    <li><a href="{{ "blog" | relURL }}">Blog</a></li>
+    {{ end }}
+    {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+
+</ul>
+
+<ul class="privacy-links">
+    <li><a class="manage-consent" href="#manage-consent">Manage Consent</a></li>
+    <li><a href="#" onclick="eraseCookie('consent-settings'); location.reload();">Reset Cookies</a></li>
+    <li><a href="/privacy-policy">Privacy Policy</a></li>
+    <li><a href="/cookie-policy">Cookie Policy</a></li>
+</ul>
+
+</div>
+
+<p>{{ .Site.Params.copyright | safeHTML }}</p>
