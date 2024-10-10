@@ -40,14 +40,41 @@ a {
 nav a {
 margin-right: 10px;
 }*/
+
+
+/**
+* Site title navigation
+*/
+.sitetitle-nav {
+    width: 100%;
+}
+.sitetitle-nav a {
+    padding: 14px 16px; 
+}
+
+.sitetitle-nav a.split {
+    float: right;
+}
+
 /**
 * Top navigation
 */
 .topnav {
     overflow: hidden;
     background-color: transparent;
+    width: 100%;
 }
 
+#site-title {
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
 
 .topnav a {
     float: left;
@@ -104,7 +131,7 @@ margin-right: 10px;
 }
 
 .info-card img {
-    max-width: 100%;
+    max-width: 150px;
     max-height: 100%;
 }
 
@@ -181,6 +208,22 @@ margin-right: 10px;
     .topnav.responsive a.split.social-link-desktop {
         display: none;
     }
+}
+
+.featured-image-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.featured-image-container .featured-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 textarea {
@@ -282,6 +325,41 @@ ul.blog-posts li a:visited {
 color: #8b6fcb;
 }*/
 
+/**
+* Pagination
+*/
+.pagination {
+    margin-top: 2em;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination li {
+    display: inline;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pagination .active a {
+    background-color: #3273dc;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #333; /* Background color on hover */
+}
+
+.taxonomies-list {
+    margin-top: 2em;
+}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -340,6 +418,11 @@ color: #8b6fcb;
 
     .topnav a i:hover {
         color: #8cc2dd;
+    }
+
+    .pagination .active a {
+        background-color: white;
+        color: black;
     }
 }
 
@@ -401,4 +484,100 @@ color: #8b6fcb;
     flex: 1;
     min-width: 200px;
 }
+
+/**
+* Image Slideshow Gallery
+*/
+.img-slideshow-gallery-container, 
+.img-slideshow-gallery-container * {
+  box-sizing: border-box !important;
+}
+
+
+.img-slideshow-gallery-container img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .img-slideshow-gallery-container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .img-slideshow-gallery-myslides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .img-slideshow-gallery-container .img-slideshow-gallery-demo-cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .img-slideshow-gallery-prev,
+  .img-slideshow-gallery-next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .img-slideshow-gallery-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .img-slideshow-gallery-prev:hover,
+  .img-slideshow-gallery-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .img-slideshow-gallery-numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .img-slideshow-gallery-caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .img-slideshow-gallery-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .img-slideshow-gallery-column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .img-slideshow-gallery-container .img-slideshow-gallery-demo {
+    opacity: 0.6;
+  }
+  
+  .img-slideshow-gallery-container .active,
+  .img-slideshow-gallery-container .img-slideshow-gallery-demo:hover {
+    opacity: 1;
+  }
   

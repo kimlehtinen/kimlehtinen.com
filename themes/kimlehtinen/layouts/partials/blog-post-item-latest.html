@@ -3,7 +3,7 @@
     {{ if gt .Weight 0 }}
     <span class="">Featured</span>
     {{ end }}
-    <h2 class="">{{ .Title }}</h2>
+    <h3 class="">{{ .Title }}</h3>
     <time class="">{{ .Date | time.Format ":date_medium" }}</time>
    </a>
 </section>

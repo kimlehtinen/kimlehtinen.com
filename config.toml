@@ -21,9 +21,13 @@ enableRobotsTXT = true
     disabled = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
-    languageName = 'en'
+    languageName = 'english'
     title = 'Kim Lehtinen'
     weight = 1
+    [languages.en.pagination]
+      disableAliases = true
+      pagerSize = 5
+      path = 'page'
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
@@ -41,69 +45,103 @@ enableRobotsTXT = true
         url = "/about/"
     weight = 30
     [languages.en.params]
+      title = "Kim Lehtinen"
+      copyright = "Copyright &copy; 2024 - Kim Lehtinen"
       subtitle = 'Software, Cloud & Engineering'
       path = '/'
       name = 'Kim Lehtinen'
       bio = 'Hello! I’m Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I mostly work with backend and cloud technologies, and most of my experience is in industrial sector. I help companies gain a competitive advantage through software, automation & cloud.'
+
+      [languages.en.params.consent]
+        [[languages.en.params.consent.services]]
+          title = "Google Analytics (non-functional)"
+          description = "This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on. This helps us to improve our website and provide better content."
+          is_functional = false
+          script_file = "ga.js"
 
   [languages.fi]
     contentDir = 'content/fi'
     disabled = false
     languageCode = 'fi-FI'
     languageDirection = 'ltr'
-    languageName = 'fi'
+    languageName = 'suomi'
     title = 'Kim Lehtinen'
     weight = 2
+    [languages.fi.pagination]
+      disableAliases = true
+      pagerSize = 5
+      path = 'page'
     [languages.fi.menu]
       [[languages.fi.menu.main]]
         identifier = "home"
         name = "Koti"
         url = "/fi"
         weight = 10
-      [[languages.fi.menu.main]]
-        identifier = "blog"
-        name = "Blogi"
-        url = "/fi/blogi/"
-        weight = 20
+      #[[languages.fi.menu.main]]
+      #  identifier = "blog"
+      #  name = "Blogi"
+      #  url = "/fi/blogi/"
+      #  weight = 20
       [[languages.fi.menu.main]]
         identifier = "about"
         name = "Minusta"
         url = "/fi/minusta/"
     [languages.fi.params]
-      subtitle = 'Referenz, Tutorials und Erklärungen'
+      title = "Kim Lehtinen"
+      copyright = "Copyright &copy; 2024 - Kim Lehtinen"
+      subtitle = 'Software, Cloud & Engineering'
       path = '/fi'
       name = 'Kim Lehtinen'
       bio = 'Hei! Olen Kim Lehtinen, ohjelmistokehittäjä, joka pyrkii parantamaan maailmaa teknologian avulla. Työskentelen pääasiassa backend- ja pilviteknologioiden parissa, ja suurin osa kokemuksestani on teollisuusalalta. Autan yrityksiä saavuttamaan kilpailuetua ohjelmistojen, automaation ja pilvipalveluiden avulla.'
+
+      [languages.fi.params.consent]
+        [[languages.fi.params.consent.services]]
+          title = "Google Analytics (ei-toiminnallinen)"
+          description = "Tämä koodi antaa meille tietoa siitä, kuinka monta ihmistä vierailee verkkosivuillamme, mistä he ovat kotoisin ja mihin he klikkaavat. Tämä auttaa meitä parantamaan verkkosivujamme ja tarjoamaan parempaa sisältöä."
+          is_functional = false
+          script_file = "ga.js"
 
   [languages.sv]
     contentDir = 'content/sv'
     disabled = false
     languageCode = 'sv-SE'
     languageDirection = 'ltr'
-    languageName = 'sv'
+    languageName = 'svenska'
     title = 'Kim Lehtinen'
     weight = 2
+    [languages.sv.pagination]
+      disableAliases = true
+      pagerSize = 5
+      path = 'page'
     [languages.sv.menu]
       [[languages.sv.menu.main]]
         identifier = "home"
         name = "Hem"
         url = "/sv"
         weight = 10
-      [[languages.sv.menu.main]]
-        identifier = "blog"
-        name = "Blogg"
-        url = "/sv/blogg/"
-        weight = 20
+      #[[languages.sv.menu.main]]
+      #  identifier = "blog"
+      #  name = "Blogg"
+      #  url = "/sv/blogg/"
+      #  weight = 20
       [[languages.sv.menu.main]]
         identifier = "about"
         name = "Om mig"
         url = "/sv/om-mig/"
     [languages.sv.params]
-      subtitle = 'Referenz, Tutorials und Erklärungen'
+      title = "Kim Lehtinen"
+      copyright = "Copyright &copy; 2024 - Kim Lehtinen"
+      subtitle = 'Software, Cloud & Engineering'
       path = '/sv'
       name = 'Kim Lehtinen'
       bio = 'Hej! Jag är Kim Lehtinen, en mjukvaruingenjör som försöker göra världen till en bättre plats genom teknologi. Jag arbetar främst med backend- och molnteknologier, och största delen av min erfarenhet är inom industrisektorn. Jag hjälper företag att få konkurrensfördelar genom mjukvara, automation och molntjänster.'
 
+      [languages.sv.params.consent]
+        [[languages.sv.params.consent.services]]
+          title = "Google Analytics (icke-funktionell)"
+          description = "Denna kod ger oss insikt i antalet personer som besöker vår webbplats, var de kommer ifrån och vad de klickar på. Detta hjälper oss att förbättra vår webbplats och tillhandahålla bättre innehåll."
+          is_functional = false
+          script_file = "ga.js"
 
 # Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
 disableKinds = ["taxonomy"]
@@ -140,7 +178,6 @@ ignoreErrors = ["error-disable-taxonomy"]
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
   title = "Kim Lehtinen"
-
   copyright = "Copyright &copy; 2024 - Kim Lehtinen"
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).

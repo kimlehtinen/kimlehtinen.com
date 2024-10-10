@@ -1,0 +1,13 @@
+{{- $siteLanguages := partial "reverse-slice.html" .Site.Languages -}}
+<ul class="social-media">
+{{ range $siteLanguages }}
+<li class="social-media-link">
+    <a
+    hreflang="{{ .LanguageCode }}"
+    lang="{{ .LanguageCode }}"
+    href="{{ .Params.Path  }}" >
+    {{ .LanguageName }}
+    </a>
+</li>
+{{ end }}
+</ul>

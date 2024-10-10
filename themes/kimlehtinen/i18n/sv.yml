@@ -1,0 +1,18 @@
+latest_posts: "Senaste inläggen"
+no_posts: "Inga inlägg ännu"
+privacy:
+  consent:
+    allow: "Godkänn"
+    allow_all: "Godkänn alla"
+    deny: "Neka"
+    preferences: "Preferenser"
+    save_preferences: "Spara preferenser"
+    third_party_code: "tredjeparts kod"
+    to_improve: "för att förbättra funktionaliteten på denna webbplats."
+    would_like_to_use: "Vi skulle vilja använda"
+  cookie_policy: "Cookiepolicy"
+  cookie_policy_link: "/sv/cookiepolicy"
+  manage_consent: "Hantera samtycke"
+  privacy_policy: "Integritetspolicy"
+  privacy_policy_link: "/sv/integritetspolicy"
+  reset_cookies: "Reset Cookies"

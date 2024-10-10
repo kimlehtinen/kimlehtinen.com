@@ -75,25 +75,26 @@
         #consent-notice button.btn {position: relative; bottom: 4px;}
     }
 </style>
+{{ $services := .Site.Params.consent.services }}
 <div id="consent-notice">
     <div style="font-size: small;">
-        <p>We would like to use 
-            <a class="manage-consent" href="#manage-consent">third party code</a> 
-            to improve the functionality of this website.</p>
+        <p>{{ i18n "privacy.consent.would_like_to_use" }} 
+            <a class="manage-consent" href="#manage-consent">{{ i18n "privacy.consent.third_party_code" }}</a> 
+            {{ i18n "privacy.consent.to_improve" }}</p>
     </div>
     <div class="button-container">
-        <button class="btn approve-consent">Allow</button>
-        <button class="btn deny-consent option">Deny</button>
-        <button class="btn manage-consent option">Preferences</button>
+        <button class="btn approve-consent">{{ i18n "privacy.consent.allow" }}</button>
+        <button class="btn deny-consent option">{{ i18n "privacy.consent.deny" }}</button>
+        <button class="btn manage-consent option">{{ i18n "privacy.consent.preferences" }}</button>
     </div>
     <div style="font-size: small; margin-top: 1rem;">
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/cookie-policy">Cookie Policy</a>  
+        <a href="{{ printf "%s" (i18n "privacy.privacy_policy_link") }}">{{ i18n "privacy.privacy_policy" }}</a>
+        <a href="{{ printf "%s" (i18n "privacy.cookie_policy_link") }}">{{ i18n "privacy.cookie_policy" }}</a>  
     </div>
 </div>
 <div id="consent-overlay" style="color: black;">
     <div>
-        {{ range $index, $item := .Site.Data.consent.items }}
+        {{ range $index, $item := $services }}
             <div>
                 <input type="checkbox" id="item{{ $index }}" value="1" name="item{{ $index }}" {{ if $item.is_functional }}checked disabled{{ end }} />
                 <label for="item{{ $index }}">
@@ -103,14 +104,14 @@
             </div>
         {{ end }}
         <div>
-            <button id="save-consent" class="btn save-consent" data-consentvalue="{{ range $index, $item := .Site.Data.consent.items }}{{ if $item.is_functional}}{{ else }}0{{ end }}{{ end }}">Save preferences</button>
-            <button class="btn approve-consent">Allow all</button>
+            <button id="save-consent" class="btn save-consent" data-consentvalue="{{ range $index, $item := $services }}{{ if $item.is_functional}}{{ else }}0{{ end }}{{ end }}">{{ i18n "privacy.consent.save_preferences" }}</button>
+            <button class="btn approve-consent">{{ i18n "privacy.consent.allow_all" }}</button>
         </div>
     </div>
 </div>
 <script>
 
-    const scripts = [];{{ range $index, $item := (where .Site.Data.consent.items "is_functional" false) }}
+    const scripts = [];{{ range $index, $item := (where $services "is_functional" false) }}
     scripts[{{ $index }}] = "/js/{{ $item.script_file }}";{{ end }}
 
     function createCookie(name,value,days) {
@@ -226,8 +227,10 @@
     });
 </script>
 
-{{ range $index, $item := .Site.Data.consent.items }}
+{{ if $services }}
+{{ range $index, $item := $services }}
     {{ if $item.is_functional }}
         <script type="text/javascript" src="/js/{{ $item.script_file }}"></script>
     {{ end }}
+{{ end }}
 {{ end }}

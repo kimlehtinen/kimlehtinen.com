@@ -1,0 +1,18 @@
+latest_posts: "Latest posts"
+no_posts: "No posts yet"
+privacy:
+  consent:
+    allow: "Allow"
+    allow_all: "Allow all"
+    deny: "Deny"
+    preferences: "Preferences"
+    save_preferences: "Save preferences"
+    third_party_code: "third party code"
+    to_improve: "to improve the functionality of this website"
+    would_like_to_use: "We would like to use"
+  cookie_policy: "Cookie policy"
+  cookie_policy_link: "/cookie-policy"
+  manage_consent: "Manage consent"
+  privacy_policy: "Privacy policy"
+  privacy_policy_link: "/privacy-policy"
+  reset_cookies: "Reset Cookies"

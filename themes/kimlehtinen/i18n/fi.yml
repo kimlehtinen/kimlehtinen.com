@@ -1,0 +1,18 @@
+latest_posts: "Viimeisimmät postaukset"
+no_posts: "Ei postauksia vielä"
+privacy:
+  consent:
+    allow: "Salli"
+    allow_all: "Salli kaikki"
+    deny: "Kiellä"
+    preferences: "Asetukset"
+    save_preferences: "Tallenna asetukset"
+    third_party_code: "kolmannen osapuolen koodi"
+    to_improve: "parantaaksemme tämän sivuston toimivuutta."
+    would_like_to_use: "Haluamme käyttää"
+  cookie_policy: "Evästekäytäntö"
+  cookie_policy_link: "/fi/evastekaytanto"
+  manage_consent: "Hallitse evästeet"
+  privacy_policy: "Tietosuoja"
+  privacy_policy_link: "/fi/tietosuoja"
+  reset_cookies: "Nollaa evästeet"

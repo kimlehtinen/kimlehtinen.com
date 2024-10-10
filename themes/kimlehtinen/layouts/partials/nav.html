@@ -6,15 +6,6 @@
 
 {{ partial "social_nav.html" . }}
 
-
-{{ range .Site.Languages }}
-      <a
-      class="split"
-      href="{{ .Params.Path  }}" >
-        {{ .LanguageName }}
-      </a>
-      {{ end }}
-
 <a href="javascript:void(0);" class="icon" onclick="onNavbarHamburgerMenuClick()">
     <i class="fa fa-bars"></i>
 </a>

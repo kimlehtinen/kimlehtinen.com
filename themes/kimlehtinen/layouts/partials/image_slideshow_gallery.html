@@ -1,0 +1,28 @@
+<div class="img-slideshow-gallery-container">
+    {{ $length := len . }}
+    {{ range $index, $image := . }}
+      <div class="img-slideshow-gallery-myslides fade">
+        <div class="img-slideshow-gallery-numbertext">{{ add $index 1 }} / {{ $length }}</div>
+        <img src="{{ $image.src }}" style="width:100%">
+      </div>
+    {{ end }}
+  
+    <!-- Next and previous buttons -->
+    <a class="img-slideshow-gallery-prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="img-slideshow-gallery-next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="img-slideshow-gallery-caption-container">
+        <p id="img-slideshow-gallery-caption"></p>
+    </div>
+
+  <div class="img-slideshow-gallery-row">
+    {{ range $index, $image := . }}
+    <div class="img-slideshow-gallery-column">
+      <img class="img-slideshow-gallery-demo img-slideshow-gallery-demo-cursor" src="{{ $image.src }}" style="width:100%" onclick="currentSlide({{ add $index 1 }})" alt="{{ $image.alt }}">
+    </div>
+    {{ end }}
+  </div>
+
+</div>
+
+  

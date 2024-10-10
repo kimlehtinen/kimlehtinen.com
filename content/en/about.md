@@ -1,6 +1,7 @@
 ---
 title: "About"
 meta: false
+translationKey: "about"
 ---
 
 Hello! I'm Kim Lehtinen, a Software Engineer based in Finland. My core belief is that everyone possesses a unique superpower, a distinct ability to contribute positively to our world. That's what I aspire to do through technology, and hope I can inspire others along the way to do the same.
@@ -17,6 +18,8 @@ The last few years I have worked mainly in the industrial and energy sector. I h
 When I'm not immersed in the world of technology, I like to spend my time being active, usually by going for long walks or mountain biking. And speaking of sports, football has always been a big part of my life. It has provided me with incredible moments, and lessons that I will bring with me throughout my life.
 
 I believe it's important to do things outside of work that gives you energy, fuels your creativity and inspires you to become the best version of yourself. Life is not a sprint, it's a marathon.
+
+{{< about_images >}}
 
 ## Connect with me
 I believe in the power of collaboration and the exchange of ideas. If you're interested in the intersection of technology and sustainability, or if you'd like to discuss the latest trends in software engineering, feel free to connect with me. Together, let's explore how we can use our unique abilities to leave the world a little better than we found it.

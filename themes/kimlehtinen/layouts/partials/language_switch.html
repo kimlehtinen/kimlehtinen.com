@@ -1,0 +1,11 @@
+{{- $siteLanguages := partial "reverse-slice.html" .Site.Languages -}}
+
+{{ range $siteLanguages }}
+<a
+class="split language-switch-desktop"
+hreflang="{{ .LanguageCode }}"
+lang="{{ .LanguageCode }}"
+href="{{ .Params.Path  }}" >
+{{ .LanguageName }}
+</a>
+{{ end }}

@@ -10,10 +10,14 @@
   </div>
 </div>
 
-<h2>Latest posts:</h2>
+{{ .Content }}
+
 {{ $latestPosts := first 3 (where .Site.RegularPages "Type" "blog") }}
-    {{ range $latestPosts }}
-    {{ partial "blog-post-item.html" . }}
+{{ if $latestPosts}}
+<h2>{{ i18n "latest_posts" }}:</h2>
+{{ end }}
+{{ range $latestPosts }}
+    {{ partial "blog-post-item-latest.html" . }}
 {{ end }}
 
 {{ end }}

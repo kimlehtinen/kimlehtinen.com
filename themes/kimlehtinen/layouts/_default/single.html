@@ -10,6 +10,13 @@
         </time>
       </i>
     </p>
+    {{ $images := .Params.images }}
+    {{ if $images }}
+    {{ $firstImage := index $images 0 }}
+    <div class="featured-image-container">
+      <img src="{{ $firstImage }}" class="featured-image">
+    </div>
+    {{ end }}
     {{ end }}{{ end }}
   </header>
   <section class="post-content">
