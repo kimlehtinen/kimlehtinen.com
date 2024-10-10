@@ -10,7 +10,7 @@ tags:
 - "Python"
 description: "Using Kubernetes Jobs for running task-based container workloads at scale, that are able to scale and run for a long time."
 images:
-- "distributed-cloud-system-design.webp"
+- "/images/2023/distributed-cloud-system-design.webp"
 ---
 
 Containers are widely used for deploying and running applications. There are several benefits for containerizing applications. They offer a consistent environment for applications to be deployed to together with their dependencies. Containers are able to isolate workloads, and guarantee a certain amount of resources for each workload. In addition, they can be created fast, on the fly. This makes containers good for running resource-intensive workloads.
