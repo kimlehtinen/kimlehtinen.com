@@ -1,8 +1,0 @@
-{{ if .Params.tags }}
-<div class="blog-post-tags text-secondary">
-    <i class="fa fa-tag" aria-hidden="true"></i>
-    {{ range .Params.tags }}
-        <a class="" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
-    {{ end }}
-</div>
-{{ end }}

@@ -7,15 +7,10 @@ My personal website & blog.
 
 ## Create new blog post
 ```
-hugo new blog/<title>/index.md
+hugo new content/<language>/blog/<title>.md
 ```
 
 ## Run locally
 ```
 hugo serve -D
-```
-
-## Submodules
-```
-git submodule update --init --recursive
 ```
