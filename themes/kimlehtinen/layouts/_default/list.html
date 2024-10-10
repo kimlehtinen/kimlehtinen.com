@@ -13,6 +13,7 @@
   {{ else }}
   <h1>{{ .Title }}</h1>
   {{ end }}
+    
     {{ range .Pages }}
     {{ partial "blog-post-item.html" . }}
     {{ else }}
@@ -33,6 +34,5 @@
   </div>
     {{ end }}
 
-    {{ template "_internal/pagination.html" . }}
 </content>
 {{ end }}
