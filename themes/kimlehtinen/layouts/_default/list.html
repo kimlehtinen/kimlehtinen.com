@@ -13,14 +13,18 @@
   {{ else }}
   <h1>{{ .Title }}</h1>
   {{ end }}
+
+  {{ $pages := where site.RegularPages "Type" "blog" }}
+  {{ $paginator := .Paginate $pages 5 }}
     
-    {{ range .Pages }}
+  {{ range $paginator.Pages }}
     {{ partial "blog-post-item.html" . }}
-    {{ else }}
+  {{ else }}
     <p>
       {{ i18n "no_posts" }}
     </p>
-    {{ end }}
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
   {{ if .Data.Singular }}
   {{else}}
   <div class="taxonomies-list">
