@@ -56,7 +56,7 @@
         "url": {{ replace $logoURL "\\/" "/" | safeHTML }}
       },
       {{ end }}
-      "description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}",
+      "description": "{{ with .Description }}{{ . | plainify | safeHTML }}{{ else }}{{ if .IsPage }}{{ .Summary | plainify | safeHTML }}{{ else }}{{ with .Site.Params.description }}{{ . | plainify | safeHTML }}{{ end }}{{ end }}{{ end }}",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": {{ .Permalink | absURL }}
