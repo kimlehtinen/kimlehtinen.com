@@ -1,0 +1,67 @@
+<script type="application/ld+json">
+  {{ $logoURL := (urls.Parse .Site.BaseURL).ResolveReference (urls.Parse .Site.Params.siteimage) | safeJS }}
+    
+  {{ if .IsHome }}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": {{ .Site.BaseURL | absURL | safeHTML }},
+    "name": "{{ .Site.Title | safeHTML }}",
+    "description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}",
+    "inLanguage": "{{ .Site.LanguageCode }}",
+    "publisher": {
+      "@type": "Person",
+      "name": {{ .Site.Params.author }},
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ replace $logoURL "\\/" "/" | safeHTML }}
+      }
+    }
+  }
+  {{ else }}
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "inLanguage": "{{ .Site.LanguageCode }}",
+      "publisher": {
+        "@type": "Person",
+        "name": {{ .Site.Params.author }},
+        "image": {
+          "@type": "ImageObject",
+          "url": {{ replace $logoURL "\\/" "/" | safeHTML }}
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": {{ .Site.Params.author }},
+        "image": {
+          "@type": "ImageObject",
+          "url": {{ replace $logoURL "\\/" "/" | safeHTML }}
+        }
+      },
+      "headline": {{ with .Title }}{{ . | safeHTML }}{{ else }}{{ .Site.Title | safeHTML }}{{ end }},
+      "url": {{ .Permalink | absURL }},
+      "datePublished": {{ .PublishDate }},
+      "dateModified": {{ .Lastmod }},
+      {{ $images := .Params.images }}
+      {{ if $images }}
+      {{ $firstImage := index $images 0 | absURL }}
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ $firstImage }}
+      },
+      {{ else }}
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ replace $logoURL "\\/" "/" | safeHTML }}
+      },
+      {{ end }}
+      "keywords": [{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}],
+      "description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": {{ .Permalink | absURL }}
+      }
+    }
+    {{ end }}
+    </script>
