@@ -56,7 +56,6 @@
         "url": {{ replace $logoURL "\\/" "/" | safeHTML }}
       },
       {{ end }}
-      "keywords": [{{ if .IsPage}}{{ range $index, $tag := .Params.tags }}{{ $tag }},{{ end }}{{ else }}{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}{{ end }}],
       "description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}",
       "mainEntityOfPage": {
         "@type": "WebPage",
