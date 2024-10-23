@@ -1,4 +1,7 @@
 <ul class="social-media">
+    {{ if .Site.Params.Social.bluesky }}
+    <li><a class="social-media-link" href="https://bsky.app/profile/{{ .Site.Params.Social.bluesky }}"><i class="fab fa-bluesky fa-lg" aria-hidden="true"></i></a></li>
+    {{ end }}
     {{ if .Site.Params.Social.twitter }}
     <li><a class="social-media-link" href="https://twitter.com/{{ .Site.Params.Social.twitter }}"><i class="fab fa-x-twitter fa-lg" aria-hidden="true"></i></a></li>
     {{ end }} {{ if .Site.Params.Social.linkedin }}

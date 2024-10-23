@@ -1,3 +1,6 @@
+{{ if .Site.Params.Social.bluesky }}
+<a class="split social-link-desktop" href="https://bsky.app/profile/{{ .Site.Params.Social.bluesky }}"><i class="fab fa-bluesky fa-lg" aria-hidden="true"></i></a>
+{{ end }}
 {{ if .Site.Params.Social.twitter }}
 <a class="split social-link-desktop" href="https://twitter.com/{{ .Site.Params.Social.twitter }}"><i class="fab fa-x-twitter fa-lg" aria-hidden="true"></i></a>
 {{ end }} {{ if .Site.Params.Social.linkedin }}

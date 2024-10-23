@@ -170,6 +170,7 @@ ignoreErrors = ["error-disable-taxonomy"]
     twitter = "kimlehtinen"
     instagram = ""
     rss = "/index.xml"
+    bluesky = "kimlehtinen.com"
   # The "description" of your website. This is used in the meta data of your generated html.
   description = "Kim Lehtinen is a Software Engineer specializing in backend and cloud technologies."
 
