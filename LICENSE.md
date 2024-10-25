@@ -1,16 +1,12 @@
-# License Overview
+# License
 
-- **Content License**: All blog content (Markdown files in the `content/` folder, as well as site and post images under `static/images/`) is copyrighted by Kim Lehtinen.
-  - **Permitted Use**: Quoting or citing portions of the content for informational, educational, or editorial purposes is allowed. This includes using quotes or citations in blogs, articles, or other written works—whether commercial or non-commercial—as long as proper attribution is given.
-  - **Prohibited Use**: Full reproduction, modification, or redistribution of the content is not allowed without explicit permission.
+## Content License
+[Content License is found here](/content/en/license.md), which concerns all website content, meaning: posts, illustrations and images.
 
-- **Code License**: Website code and theme files (in `themes/`, `layouts/`, etc.) are licensed under the MIT License. The Hugo theme has it's own [theme license](/themes/kimlehtinen/LICENSE).
+## Code License
+Website code and theme files (in `themes/`, `layouts/`, etc.) are licensed under the MIT License. The Hugo theme has it's own [theme license](/themes/kimlehtinen/LICENSE).
 
-## Attribution for Quotes and Citations
-When quoting or citing content, please attribute for example as follows:
-> [Post Title], by Kim Lehtinen, [Link to Post URL]
-
-## MIT License (for website/theme code, not for content or images)
+## MIT License (for website/theme code, not for website content or images)
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
