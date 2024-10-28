@@ -56,6 +56,7 @@ function imgshGaShowSlides(slideshow, n) {
   let slides = slideshow.getElementsByClassName("img-slideshow-gallery-myslides");
   let dots = slideshow.getElementsByClassName("img-slideshow-gallery-demo");
   let captionText = slideshow.querySelector(".img-slideshow-gallery-caption");
+  let dateText = slideshow.querySelector(".img-slideshow-gallery-date");
   if (n > slides.length) { n = 1 }
   if (n < 1) { n = slides.length }
   for (i = 0; i < slides.length; i++) {
@@ -67,5 +68,12 @@ function imgshGaShowSlides(slideshow, n) {
   slides[n - 1].style.display = "block";
   dots[n - 1].className += " active";
   captionText.innerHTML = dots[n - 1].alt;
+
+  dateTextValue = dots[n - 1].dataset.date;
+  if (dateTextValue) {
+    dateText.innerHTML = ", " + dateTextValue;
+  } else {
+    dateText.innerHTML = "";
+  }
 }
 });

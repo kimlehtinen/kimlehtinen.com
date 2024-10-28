@@ -1,0 +1,37 @@
+images:
+  - src: "/images/2024/2024-10-27-ffjaro-liigakarsinta.jpg"
+    alt:
+      en: "Veikkausliiga here comes Jaro!"
+      fi: "Veikkausliiga här kommer Jaro!"
+      sv: "Veikkausliiga här kommer Jaro!"
+    date: "2024-10-27"
+  - src: "/images/2023/2023-11-25-milan-fiorentina.jpg"
+    alt:
+      en: "AC Milan - Fiorentina"
+      fi: "AC Milan - Fiorentina"
+      sv: "AC Milan - Fiorentina"
+    date: "2023-11-25"
+  - src: "/images/2023/2023-11-26-juventus-inter.jpg"
+    alt:
+      en: "Juventus - Inter"
+      fi: "Juventus - Inter"
+      sv: "Juventus - Inter"
+    date: "2023-11-26"
+  - src: "/images/2024/2024-05-18-dortmund-reus.jpg"
+    alt:
+      en: "Marco Reus last game at Dortmund"
+      fi: "Marco Reus viimeinen peli Dortmundissa"
+      sv: "Marco Reus sista match i Dortmund"
+    date: "2024-05-18"
+  - src: "/images/2024/2024-05-15-brondby-nordsjaelland.jpg"
+    alt:
+      en: "Brøndby - Nordsjælland"
+      fi: "Brøndby - Nordsjælland"
+      sv: "Brøndby - Nordsjælland"
+    date: "2024-05-15"
+  - src: "/images/2024/2024-05-16-fck-midtjylland.jpg"
+    alt:
+      en: "FCK - Midtjylland"
+      fi: "FCK - Midtjylland"
+      sv: "FCK - Midtjylland"
+    date: "2024-05-16"

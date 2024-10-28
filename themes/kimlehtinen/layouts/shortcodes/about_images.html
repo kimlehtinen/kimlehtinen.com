@@ -1,1 +1,2 @@
-{{ partial "image_slideshow_gallery.html" (slice (dict "src" "/images/2023/2023-11-25-milan-fiorentina.jpg" "alt" "AC Milan - Fiorentina") (dict "src" "/images/2023/2023-11-26-juventus-inter.jpg" "alt" "Juventus - Inter") (dict "src" "/images/2024/2024-05-18-dortmund-reus.jpg" "alt" "Marco Reus last game at Dortmund") (dict "src" "/images/2024/2024-05-15-brondby-nordsjaelland.jpg" "alt" "Brøndby - Nordsjælland") (dict "src" "/images/2024/2024-05-16-fck-midtjylland.jpg" "alt" "FCK - Midtjylland") ) }}
+{{ $images := (index .Site.Data "about_images").images }}
+{{ partial "image_slideshow_gallery.html" (dict "images" $images "lang" .Site.Language.Lang) }}

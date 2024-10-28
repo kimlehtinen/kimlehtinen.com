@@ -558,6 +558,11 @@ color: #8b6fcb;
     padding: 2px 16px;
     color: white;
   }
+
+  .img-slideshow-gallery-date {
+    font-style: italic !important;
+    font-size: small;
+  }
   
   .img-slideshow-gallery-row:after {
     content: "";
