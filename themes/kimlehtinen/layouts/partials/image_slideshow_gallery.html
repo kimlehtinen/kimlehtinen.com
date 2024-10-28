@@ -1,5 +1,5 @@
 <div class="img-slideshow-gallery-container">
-    {{ $length := len . }}
+    {{ $length := len .images }}
     {{ range $index, $image := .images }}
       <div class="img-slideshow-gallery-myslides fade">
         <div class="img-slideshow-gallery-numbertext">{{ add $index 1 }} / {{ $length }}</div>
@@ -12,10 +12,8 @@
     <a class="img-slideshow-gallery-next">&#10095;</a>
 
     <div class="img-slideshow-gallery-caption-container">
-        <p>
-        <span class="img-slideshow-gallery-caption"></span>
-        <span class="img-slideshow-gallery-date"></span>
-        </p>
+        <p class="img-slideshow-gallery-caption"></p>
+        <p class="img-slideshow-gallery-date"></p>
     </div>
 
   <div class="img-slideshow-gallery-row">

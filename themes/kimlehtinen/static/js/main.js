@@ -69,11 +69,6 @@ function imgshGaShowSlides(slideshow, n) {
   dots[n - 1].className += " active";
   captionText.innerHTML = dots[n - 1].alt;
 
-  dateTextValue = dots[n - 1].dataset.date;
-  if (dateTextValue) {
-    dateText.innerHTML = ", " + dateTextValue;
-  } else {
-    dateText.innerHTML = "";
-  }
+  dateText.innerHTML = dots[n - 1].dataset.date;
 }
 });
