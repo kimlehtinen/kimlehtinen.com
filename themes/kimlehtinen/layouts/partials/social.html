@@ -1,18 +1,23 @@
 <ul class="social-media">
-    {{ if .Site.Params.Social.bluesky }}
-    <li><a class="social-media-link" href="https://bsky.app/profile/{{ .Site.Params.Social.bluesky }}"><i class="fab fa-bluesky fa-lg" aria-hidden="true"></i></a></li>
+    {{ if .Site.Params.Social.rss }}
+    <li><a class="social-media-link" href="{{ .Site.Params.Social.rss }}"><i class="fa-solid fa-rss fa-lg" aria-hidden="true"></i></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.github }}
+    <li><a class="social-media-link" href="https://github.com/{{ .Site.Params.Social.github }}"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.linkedin }}
+    <li><a class="social-media-link" href="https://www.linkedin.com/in/{{ .Site.Params.Social.linkedin }}"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
     {{ end }}
     {{ if .Site.Params.Social.twitter }}
     <li><a class="social-media-link" href="https://twitter.com/{{ .Site.Params.Social.twitter }}"><i class="fab fa-x-twitter fa-lg" aria-hidden="true"></i></a></li>
-    {{ end }} {{ if .Site.Params.Social.linkedin }}
-    <li><a class="social-media-link" href="https://www.linkedin.com/in/{{ .Site.Params.Social.linkedin }}"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-    {{ end }} {{ if .Site.Params.Social.github }}
-    <li><a class="social-media-link" href="https://github.com/{{ .Site.Params.Social.github }}"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a></li>
-    {{ end }} {{ if .Site.Params.Social.facebook }}
+    {{ end }}
+    {{ if .Site.Params.Social.bluesky }}
+    <li><a class="social-media-link" href="https://bsky.app/profile/{{ .Site.Params.Social.bluesky }}"><i class="fab fa-bluesky fa-lg" aria-hidden="true"></i></a></li>
+    {{ end }}
+    {{ if .Site.Params.Social.facebook }}
     <li><a class="social-media-link" href="https://www.facebook.com/{{ .Site.Params.Social.facebook }}"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-    {{ end }} {{ if .Site.Params.Social.instagram }}
+    {{ end }}
+    {{ if .Site.Params.Social.instagram }}
     <li><a class="social-media-link" href="https://instagram.com/{{ .Site.Params.Social.instagram }}"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-    {{ end }} {{ if .Site.Params.Social.rss }}
-    <li><a class="social-media-link" href="{{ .Site.Params.Social.rss }}"><i class="fa-solid fa-rss fa-lg" aria-hidden="true"></i></a></li>
     {{ end }}
 </ul>
