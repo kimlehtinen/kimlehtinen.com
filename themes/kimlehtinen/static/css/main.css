@@ -361,6 +361,23 @@ color: #8b6fcb;
     margin-top: 2em;
 }
 
+.blog-post-item a {
+    text-decoration: none;
+}
+.blog-post-item a:hover {
+    text-decoration: underline;
+}
+.blog-post-item time {
+    font-size: 0.8em;
+}
+.blog-post-item h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.blog-post-item .blog-post-summary {
+    color: black;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #333;
@@ -424,43 +441,35 @@ color: #8b6fcb;
         background-color: white;
         color: black;
     }
+
+
+    .blog-post-item .blog-post-summary {
+        color: white;
+    }
 }
 
 
 /* social media */
 .social-media {
-    list-style: none; /* Remove dots */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Make the list horizontal */
-    gap: 20px; /* Optional: Add space between items */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .social-media li {
-    display: inline; /* Ensure list items are inline */
+    display: inline;
 }
 
 .social-media a {
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit color from parent */
+    text-decoration: none;
+    color: inherit;
 }
 
 .social-media a:hover {
-    color: #8cc2dd; /* Optional: Change color on hover */
+    color: #8cc2dd;
 }
 
-.blog-post-item a {
-    text-decoration: none;
-}
-.blog-post-item a:hover {
-    text-decoration: underline;
-}
-.blog-post-item time {
-    font-size: 0.8em;
-}
-.blog-post-item h3 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
 
 .footer-container {
     display: flex;

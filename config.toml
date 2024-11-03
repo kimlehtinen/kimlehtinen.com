@@ -47,12 +47,13 @@ enableRobotsTXT = true
     [languages.en.params]
       title = "Kim Lehtinen"
       copyright = "Copyright &copy; 2024 - Kim Lehtinen"
-      subtitle = 'Software, Cloud & Engineering'
+      #subtitle = 'Software, Cloud & Engineering'
       path = '/'
       name = 'Kim Lehtinen'
       author = "Kim Lehtinen"
       siteimage = "/images/kimlehtinen.jpg"
       description = "Kim Lehtinen is a Software Engineer specializing in backend and cloud technologies."
+      #summaryLength = 50
       bio = 'Hello! I’m Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I mostly work with backend and cloud technologies, and most of my experience is in industrial sector. I help companies gain a competitive advantage through software, automation & cloud.'
 
       [languages.en.params.consent]
@@ -94,10 +95,11 @@ enableRobotsTXT = true
       author = "Kim Lehtinen"
       siteimage = "/images/kimlehtinen.jpg"
       copyright = "Copyright &copy; 2024 - Kim Lehtinen"
-      subtitle = 'Software, Cloud & Engineering'
+      #subtitle = 'Software, Cloud & Engineering'
       path = '/fi'
       name = 'Kim Lehtinen'
       description = ""
+      #summaryLength = 50
       bio = 'Hei! Olen Kim Lehtinen, ohjelmistokehittäjä, joka pyrkii parantamaan maailmaa teknologian avulla. Työskentelen pääasiassa backend- ja pilviteknologioiden parissa, ja suurin osa kokemuksestani on teollisuusalalta. Autan yrityksiä saavuttamaan kilpailuetua ohjelmistojen, automaation ja pilvipalveluiden avulla.'
 
       [languages.fi.params.consent]
@@ -139,10 +141,11 @@ enableRobotsTXT = true
       author = "Kim Lehtinen"
       siteimage = "/images/kimlehtinen.jpg"
       copyright = "Copyright &copy; 2024 - Kim Lehtinen"
-      subtitle = 'Software, Cloud & Engineering'
+      #subtitle = 'Software, Cloud & Engineering'
       path = '/sv'
       name = 'Kim Lehtinen'
       description = ""
+      #summaryLength = 50
       bio = 'Hej! Jag är Kim Lehtinen, en mjukvaruingenjör som försöker göra världen till en bättre plats genom teknologi. Jag arbetar främst med backend- och molnteknologier, och största delen av min erfarenhet är inom industrisektorn. Jag hjälper företag att få konkurrensfördelar genom mjukvara, automation och molntjänster.'
 
       [languages.sv.params.consent]
@@ -177,7 +180,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
   favicon = "favicon.ico"
-
+  #summaryLength = 50
   # These "images" are used for the structured data templates. This will show up, when
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
