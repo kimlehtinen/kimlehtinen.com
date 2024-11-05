@@ -2,6 +2,7 @@
 title: "Task-based containers using Kubernetes Jobs"
 date: 2023-04-27T22:26:42+03:00
 draft: false
+favorite: true
 categories:
 - "Cloud & Infrastructure"
 tags: 

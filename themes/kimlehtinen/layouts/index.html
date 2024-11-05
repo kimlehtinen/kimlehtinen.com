@@ -14,10 +14,24 @@
 
 {{ $latestPosts := first 3 (where .Site.RegularPages "Type" "blog") }}
 {{ if $latestPosts}}
-<h2>{{ i18n "latest_posts" }}:</h2>
+<h2 class="featured-posts-title">
+  <i class="fas fa-newspaper"></i>
+  {{ i18n "latest_posts" }}
+</h2>
 {{ end }}
 {{ range $latestPosts }}
-    {{ partial "blog-post-item-latest.html" . }}
+    {{ partial "blog-post-item-featured.html" . }}
+{{ end }}
+
+{{ $favoritePosts := first 3 (where .Site.RegularPages "Params.favorite" true) }}
+{{ if $favoritePosts }}
+<h2 class="featured-posts-title">
+  <i class="fas fa-star"></i>
+  {{ i18n "favorite_posts" }}
+</h2>
+{{ end }}
+{{ range $favoritePosts }}
+  {{ partial "blog-post-item-featured.html" . }}
 {{ end }}
 
 {{ end }}

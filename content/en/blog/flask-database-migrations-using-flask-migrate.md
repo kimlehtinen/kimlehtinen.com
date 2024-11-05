@@ -1,6 +1,7 @@
 ---
 title: "Flask database migrations using Flask-Migrate"
 date: 2022-08-01T05:21:05+03:00
+favorite: true
 categories:
 - "Software Engineering"
 tags:

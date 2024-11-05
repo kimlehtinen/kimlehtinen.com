@@ -1,6 +1,7 @@
 ---
 title: "Python Flask Dependency Injection"
 date: 2022-07-15T02:26:09+03:00
+favorite: true
 categories:
 - "Software Engineering"
 tags:
