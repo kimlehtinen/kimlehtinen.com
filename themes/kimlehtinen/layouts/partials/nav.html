@@ -1,4 +1,4 @@
-<a href="{{ "" | relURL }}">Kim Lehtinen</a>
+<a href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
 {{ range .Site.Menus.main }}
 <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}

@@ -1,5 +1,5 @@
 <nav class="sitetitle-nav">
-<a href="{{ "" | relURL }}" id="site-title" class="title">
+<a href="{{ .Site.Home.RelPermalink }}" id="site-title" class="title">
   {{ .Site.Title }}
 </a>
 {{ partial "language_switch.html" . }}
