@@ -1,0 +1,141 @@
+categories:
+  en:
+    list:
+      - title: "Technology"
+        description: "All things technology, software, cloud, devops and more."
+      - title: "Miscellaneous"
+        description: "Everything else that I find interesting."
+  fi:
+    list:
+      - title: "Teknologia"
+        description: "Kaikki teknologiaan, ohjelmistokehitykseen, pilveen, devopsiin ja muuhun liittyvä."
+      - title: "Sekalaiset"
+        description: "Kaikki muu, mikä minua kiinnostaa."
+  sv:
+    list:
+      - title: "Teknologi"
+        description: "Allt om teknologi, programvaroutveckling, moln, devops och mer." 
+      - title: "Blandat"
+        description: "Allt annat som jag finner intressant."
+blogs:
+  - en:
+      title: "Scott Hanselman"
+      author: "Scott Hanselman"
+      blog_url: "https://www.hanselman.com/"
+      posts:
+        - title: "Your Blog is The Engine of Community"
+          url: "https://www.hanselman.com/blog/your-blog-is-the-engine-of-community"
+          description: "Your blog is the engine of community and your blog is the best way to build community and build your brand."
+      description: "Scott Hanselman's blog on programming, user experience, the web, open source, .NET, the cloud and more."
+      categories: ["Technology"]
+    fi:
+      title: "Scott Hanselman"
+      author: "Scott Hanselman"
+      blog_url: "https://www.hanselman.com/"
+      posts:
+        - title: "Your Blog is The Engine of Community"
+          url: "https://www.hanselman.com/blog/your-blog-is-the-engine-of-community"
+          description: "Blogisi on paras tapa rakentaa yhteisöä ja rakentaa brändiäsi."
+      description: "Scott Hanselmanin blogi ohjelmoinnista, käyttäjäkokemuksesta, webistä, avoimesta lähdekoodista, .NETistä, pilvestä ja muusta."
+      categories: ["Teknologia"]
+    sv:
+      title: "Scott Hanselman"
+      author: "Scott Hanselman"
+      blog_url: "https://www.hanselman.com/"
+      posts:
+        - title: "Your Blog is The Engine of Community"
+          url: "https://www.hanselman.com/blog/your-blog-is-the-engine-of-community"
+          description: "Din blogg är gemenskapens motor och din blogg är det bästa sättet att bygga gemenskap och bygga ditt varumärke."
+      description: "Scott Hanselmans blogg om programmering, användarupplevelse, webben, öppen källkod, .NET, moln och mer."
+      categories: ["Teknologi"]
+  - en:
+      title: "Jeff Geerling"
+      author: "Jeff Geerling"
+      blog_url: "https://www.jeffgeerling.com/"
+      posts:
+        - title: "Ansible playbook to upgrade Ubuntu/Debian servers and reboot if needed"
+          url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
+          description: "How to use Ansible to upgrade Ubuntu/Debian servers and reboot if needed."
+      description: "Jeff Geerling's blog on Ansible, Kubernetes, Linux, Raspberry Pis and more."
+      categories: ["Technology"]
+    fi:
+      title: "Jeff Geerling"
+      author: "Jeff Geerling"
+      blog_url: "https://www.jeffgeerling.com/"
+      posts:
+        - title: "Ansible playbook to upgrade Ubuntu/Debian servers and reboot if needed"
+          url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
+          description: "Kuinka käyttää Ansiblea päivittämään Ubuntu/Debian-palvelimet ja käynnistämään uudelleen tarvittaessa."
+      description: "Jeff Geerlingin blogi Ansiblesta, Kuberneteksesta, Linuxista, Raspberry Pista ja paljon muuta."
+      categories: ["Teknologia"]
+    sv:
+      title: "Jeff Geerling"
+      author: "Jeff Geerling"
+      blog_url: "https://www.jeffgeerling.com/"
+      posts:
+        - title: "Ansible playbook to upgrade Ubuntu/Debian servers and reboot if needed"
+          url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
+          description: "Hur man använder Ansible för att uppgradera Ubuntu/Debian-servrar och starta om vid behov."
+      description: "Jeff Geerlings blogg om Ansible, Kubernetes, Linux, Raspberry Pi och mer."
+      categories: ["Teknologi"]
+  - en:
+      title: "Jonathan Björkskog"
+      author: "Jonathan Björkskog"
+      blog_url: "https://jonathanbjorkskog.com/"
+      posts:
+        - title: "12 Rules for SEO"
+          url: "https://jonathanbjorkskog.com/12-rules-for-seo"
+          description: "12 rules for SEO that will help you to get more organic traffic to your website."
+      description: "Jonathan Björkskog's blog on SEO, digital marketing and more."
+      categories: ["Miscellaneous"]
+    fi:
+      title: "Jonathan Björkskog"
+      author: "Jonathan Björkskog"
+      blog_url: "https://jonathanbjorkskog.com/"
+      posts:
+        - title: "12 Rules for SEO"
+          url: "https://jonathanbjorkskog.com/12-rules-for-seo"
+          description: "12 sääntöä SEO:lle, jotka auttavat sinua saamaan enemmän orgaanista liikennettä verkkosivustollesi."
+      description: "Jonathan Björkskogin blogi SEO:sta, digitaalisesta markkinoinnista ja muusta."
+      categories: ["Sekalaiset"]
+    sv:
+      title: "Jonathan Björkskog"
+      author: "Jonathan Björkskog"
+      blog_url: "https://jonathanbjorkskog.com/"
+      posts:
+        - title: "12 Rules for SEO"
+          url: "https://jonathanbjorkskog.com/12-rules-for-seo"
+          description: "12 regler för SEO som hjälper dig att få mer organisk trafik till din webbplats."
+      description: "Jonathan Björkskogs blogg om SEO, digital marknadsföring och mer."
+      categories: ["Blandat"]
+  - en:
+      title: "Katarina Dahlin"
+      author: "Katarina Dahlin"
+      blog_url: "https://katarinadahlin.com/"
+      posts:
+        - title: "How to Grow Your Organic Traffic and Make Your Site Bloom"
+          url: "https://katarinadahlin.com/seo-tactics-slow-flower-garden/"
+          description: "Grow your blog's organic traffic with proven SEO tips: keyword research, content creation, meta optimization, and featured snippets."
+      description: "Katarina Dahlin's blog on SEO, digital marketing, and more."
+      categories: ["Miscellaneous"]
+    fi:
+      title: "Katarina Dahlin"
+      author: "Katarina Dahlin"
+      blog_url: "https://katarinadahlin.com/"
+      posts:
+        - title: "How to Grow Your Organic Traffic and Make Your Site Bloom"
+          url: "https://katarinadahlin.com/seo-tactics-slow-flower-garden/"
+          description: "Kasvata blogin orgaanista liikennettäsi todistetuilla SEO-vinkkeillä: avainsanatutkimus, sisällön luominen, metaoptimointi."
+      description: "Katarina Dahlinin blogi SEO:sta, digitaalisesta markkinoinnista ja muusta."
+      categories: ["Sekalaiset"]
+    sv:
+      title: "Katarina Dahlin"
+      author: "Katarina Dahlin"
+      blog_url: "https://katarinadahlin.com/"
+      posts:
+        - title: "How to Grow Your Organic Traffic and Make Your Site Bloom"
+          url: "https://katarinadahlin.com/seo-tactics-slow-flower-garden/"
+          description: "Öka din blogs organiska trafik med beprövade SEO-tips: nyckelordsforskning, innehållsskapande, metaoptimering."
+      description: "Katarina Dahlins blogg om SEO, digital marknadsföring och mer"
+      categories: ["Blandat"]
+  

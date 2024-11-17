@@ -43,7 +43,29 @@ enableRobotsTXT = true
         identifier = "about"
         name = "About"
         url = "/about/"
-    weight = 30
+        weight = 30
+
+    [[languages.en.menu.footer]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 10
+    [[languages.en.menu.footer]]
+      identifier = "blog"
+      name = "Blog"
+      url = "/blog/"
+      weight = 20
+    [[languages.en.menu.footer]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 30
+    [[languages.en.menu.footer]]
+      identifier = "blogroll"
+      name = "Blogroll"
+      url = "/blogroll/"
+      weight = 40
+
     [languages.en.params]
       title = "Kim Lehtinen"
       copyright = "Copyright &copy; 2024 - Kim Lehtinen"
@@ -90,6 +112,23 @@ enableRobotsTXT = true
         identifier = "about"
         name = "Minusta"
         url = "/fi/minusta/"
+
+    [[languages.fi.menu.footer]]
+      identifier = "home"
+      name = "Koti"
+      url = "/fi"
+      weight = 10
+    [[languages.fi.menu.footer]]
+      identifier = "about"
+      name = "Minusta"
+      url = "/fi/minusta/"
+      weight = 20
+    [[languages.fi.menu.footer]]
+      identifier = "blogiluettelo"
+      name = "Blogiluettelo"
+      url = "/fi/blogiluettelo/"
+      weight = 30
+
     [languages.fi.params]
       title = "Kim Lehtinen"
       author = "Kim Lehtinen"
@@ -136,6 +175,23 @@ enableRobotsTXT = true
         identifier = "about"
         name = "Om mig"
         url = "/sv/om-mig/"
+
+    [[languages.sv.menu.footer]]
+      identifier = "home"
+      name = "Hem"
+      url = "/sv"
+      weight = 10
+    [[languages.sv.menu.footer]]
+      identifier = "about"
+      name = "Om mig"
+      url = "/sv/om-mig/"
+      weight = 20
+    [[languages.sv.menu.footer]]
+      identifier = "blogglista"
+      name = "Blogglista"
+      url = "/sv/blogglista/"
+      weight = 30
+
     [languages.sv.params]
       title = "Kim Lehtinen"
       author = "Kim Lehtinen"

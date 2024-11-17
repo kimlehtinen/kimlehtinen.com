@@ -1,0 +1,32 @@
+{{ $blogroll := (index .Site.Data "blogroll") }}
+{{ $lang := .Site.Language.Lang }}
+{{ if $blogroll }}
+<div class="blogroll">
+{{ $categories := index $blogroll.categories $lang }}
+    {{ range $category := $categories.list }}
+        <h2>{{ $category.title }}</h2>
+        <p>{{ $category.description }}</p>
+        
+        {{ $blogs := $blogroll.blogs}}
+        {{ $blogs = sort $blogs $lang "title" }}
+        <ul>
+        {{ range $blog := $blogs }}
+            {{ $blogItem := index $blog $lang }}
+            {{ if $blogItem }}
+                {{ range $blogItem.categories }}
+                    {{ if eq . $category.title }}
+                        {{ $post := index $blogItem.posts 0 }}
+                        <li>
+                            {{ $blogItem.title }}: 
+                            <a href="{{ $post.url }}" target="_blank">
+                            ({{ $post.title }})
+                            </a>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        </ul>
+    {{ end }}
+</div>
+{{ end }}
