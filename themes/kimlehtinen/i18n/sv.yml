@@ -1,7 +1,9 @@
+categories: "Kategorier"
 favorite_posts: "Favorit inlägg"
 latest_posts: "Senaste inläggen"
 license: "Licens"
 no_posts: "Inga inlägg ännu"
+post: "Inlägg"
 privacy:
   consent:
     allow: "Godkänn"

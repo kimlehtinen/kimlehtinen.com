@@ -27,7 +27,7 @@ blogs:
           url: "https://www.hanselman.com/blog/your-blog-is-the-engine-of-community"
           description: "Your blog is the engine of community and your blog is the best way to build community and build your brand."
       description: "Scott Hanselman's blog on programming, user experience, the web, open source, .NET, the cloud and more."
-      categories: ["Technology"]
+      categories: ["Software Engineering", "Cloud", "DevOps"]
     fi:
       title: "Scott Hanselman"
       author: "Scott Hanselman"
@@ -37,7 +37,7 @@ blogs:
           url: "https://www.hanselman.com/blog/your-blog-is-the-engine-of-community"
           description: "Blogisi on paras tapa rakentaa yhteisöä ja rakentaa brändiäsi."
       description: "Scott Hanselmanin blogi ohjelmoinnista, käyttäjäkokemuksesta, webistä, avoimesta lähdekoodista, .NETistä, pilvestä ja muusta."
-      categories: ["Teknologia"]
+      categories: ["Ohjelmistokehitys", "Pilvi", "DevOps"]
     sv:
       title: "Scott Hanselman"
       author: "Scott Hanselman"
@@ -47,7 +47,67 @@ blogs:
           url: "https://www.hanselman.com/blog/your-blog-is-the-engine-of-community"
           description: "Din blogg är gemenskapens motor och din blogg är det bästa sättet att bygga gemenskap och bygga ditt varumärke."
       description: "Scott Hanselmans blogg om programmering, användarupplevelse, webben, öppen källkod, .NET, moln och mer."
-      categories: ["Teknologi"]
+      categories: ["Programvaruutveckling", "Moln", "DevOps"]
+  - en:
+      title: "Julia Evans"
+      author: "Julia Evans"
+      blog_url: "https://jvns.ca/"
+      posts:
+        - title: "How do you decide what to work on?"
+          url: "https://jvns.ca/blog/2016/08/16/how-do-you-work-on-something-important/"
+          description: "Discover practical strategies from Julia Evans on working effectively on important projects, staying focused, and achieving meaningful progress."
+      description: "Julia Evans' blog focuses on demystifying complex programming and computer science topics through clear, accessible explanations."
+      categories: ["Software Engineering", "Cloud"]
+    fi:
+      title: "Julia Evans"
+      author: "Julia Evans"
+      blog_url: "https://jvns.ca/"
+      posts:
+        - title: "How do you decide what to work on?"
+          url: "https://jvns.ca/blog/2016/08/16/how-do-you-work-on-something-important/"
+          description: "Löydä käytännön strategioita Julia Evansilta tärkeiden projektien tehokkaaseen työskentelyyn, keskittymiseen ja merkityksellisen edistyksen saavuttamiseen."
+      description: "Julia Evansin blogi keskittyy monimutkaisten ohjelmointi- ja tietojenkäsittelyaiheiden selventämiseen selkeillä, helposti ymmärrettävillä selityksillä."
+      categories: ["Ohjelmistokehitys", "Pilvi"]
+    sv:
+      title: "Julia Evans"
+      author: "Julia Evans"
+      blog_url: "https://jvns.ca/"
+      posts:
+        - title: "How do you decide what to work on?"
+          url: "https://jvns.ca/blog/2016/08/16/how-do-you-work-on-something-important/"
+          description: "Upptäck praktiska strategier från Julia Evans för att arbeta effektivt med viktiga projekt, hålla fokus och uppnå meningsfulla framsteg."
+      description: "Julia Evans blogg fokuserar på att avmystifiera komplexa programmerings- och datavetenskapliga ämnen genom tydliga, tillgängliga förklaringar."
+      categories: ["Programvaruutveckling", "Moln"]
+  - en:
+      title: "The Pragmatic Engineer"
+      author: "Gergely Orosz"
+      blog_url: "https://blog.pragmaticengineer.com/"
+      posts:
+        - title: "Data Structures & Algorithms I Used Working at Tech Companies"
+          url: "https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/"
+          description: "Learn about the data structures and algorithms used day-to-day at tech companies."
+      description: "Gergely Orosz's blog on software engineering, tech leadership, and more."
+      categories: ["Software Engineering", "Career", "Leadership"]
+    fi:
+      title: "The Pragmatic Engineer"
+      author: "Gergely Orosz"
+      blog_url: "https://blog.pragmaticengineer.com/"
+      posts:
+        - title: "Data Structures & Algorithms I Used Working at Tech Companies"
+          url: "https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/"
+          description: "Opi päivittäin käytetyistä tietorakenteista ja algoritmeista teknologiayrityksissä."
+      description: "Gergely Oroszin blogi ohjelmistotekniikasta, teknologiajohtamisesta ja muusta."
+      categories: ["Ohjelmistokehitys", "Ura", "Johtaminen"]
+    sv:
+      title: "The Pragmatic Engineer"
+      author: "Gergely Orosz"
+      blog_url: "https://blog.pragmaticengineer.com/"
+      posts:
+        - title: "Data Structures & Algorithms I Used Working at Tech Companies"
+          url: "https://blog.pragmaticengineer.com/data-structures-and-algorithms-i-actually-used-day-to-day/"
+          description: "Lär dig om de datastrukturer och algoritmer som används dagligen på olika techföretag."
+      description: "Gergely Orosz blogg om mjukvaruutveckling, tekniskt ledarskap och mer."
+      categories: ["Programvaruutveckling", "Karriär", "Ledarskap"]
   - en:
       title: "Jeff Geerling"
       author: "Jeff Geerling"
@@ -57,7 +117,7 @@ blogs:
           url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
           description: "How to use Ansible to upgrade Ubuntu/Debian servers and reboot if needed."
       description: "Jeff Geerling's blog on Ansible, Kubernetes, Linux, Raspberry Pis and more."
-      categories: ["Technology"]
+      categories: ["Software Engineering", "Cloud", "DevOps"]
     fi:
       title: "Jeff Geerling"
       author: "Jeff Geerling"
@@ -67,7 +127,7 @@ blogs:
           url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
           description: "Kuinka käyttää Ansiblea päivittämään Ubuntu/Debian-palvelimet ja käynnistämään uudelleen tarvittaessa."
       description: "Jeff Geerlingin blogi Ansiblesta, Kuberneteksesta, Linuxista, Raspberry Pista ja paljon muuta."
-      categories: ["Teknologia"]
+      categories: ["Ohjelmistokehitys", "Pilvi", "DevOps"]
     sv:
       title: "Jeff Geerling"
       author: "Jeff Geerling"
@@ -77,7 +137,67 @@ blogs:
           url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
           description: "Hur man använder Ansible för att uppgradera Ubuntu/Debian-servrar och starta om vid behov."
       description: "Jeff Geerlings blogg om Ansible, Kubernetes, Linux, Raspberry Pi och mer."
-      categories: ["Teknologi"]
+      categories: ["Programvaruutveckling", "Moln", "DevOps"]
+  - en:
+      title: "Alex Ellis"
+      author: "Alex Ellis"
+      blog_url: "https://blog.alexellis.io/"
+      posts:
+        - title: "How to Troubleshoot Applications on Kubernetes"
+          url: "https://blog.alexellis.io/troubleshooting-on-kubernetes/"
+          description: "Learn how to troubleshoot applications on Kubernetes with practical tips and tricks."
+      description: "Alex Ellis' blog on OSS, Cloud Native, Raspberry Pi."
+      categories: ["Software Engineering", "Cloud", "DevOps"]
+    fi:
+      title: "Alex Ellis"
+      author: "Alex Ellis"
+      blog_url: "https://blog.alexellis.io/"
+      posts:
+        - title: "How to Troubleshoot Applications on Kubernetes"
+          url: "https://blog.alexellis.io/troubleshooting-on-kubernetes/"
+          description: "Vinkkejä Kuberneteksen ja sen sovellusten vianmääritykseen."
+      description: "Alex Ellisin blogi avoimen lähdekoodin ohjelmistoista, pilvestä ja Raspberry Pista."
+      categories: ["Ohjelmistokehitys", "Pilvi", "DevOps"]
+    sv:
+      title: "Alex Ellis"
+      author: "Alex Ellis"
+      blog_url: "https://blog.alexellis.io/"
+      posts:
+        - title: "How to Troubleshoot Applications on Kubernetes"
+          url: "https://blog.alexellis.io/troubleshooting-on-kubernetes/"
+          description: "Tips och tricks för att felsöka Kubernetes och dess applikationer."
+      description: "Alex Ellis blogg om öppen källkod, moln och Raspberry Pi."
+      categories: ["Programvaruutveckling", "Moln", "DevOps"]
+  - en:
+      title: "Math ∩ Programming"
+      author: "Jeremy Kun"
+      blog_url: "https://jeremykun.com/"
+      posts:
+        - title: "Why there is no Hitchhiker's Guide to Mathematics for Programmers"
+          url: "https://www.jeremykun.com/2013/02/08/why-there-is-no-hitchhikers-guide-to-mathematics-for-programmers/"
+          description: "Why there is no Hitchhiker's Guide to Mathematics for Programmers and how to learn math for programming."
+      description: "Jeremy Kun's blog on mathematics, programming, algorithms, and more."
+      categories: ["Math", "Software Engineering"]
+    fi:
+      title: "Math ∩ Programming"
+      author: "Jeremy Kun"
+      blog_url: "https://jeremykun.com/"
+      posts:
+        - title: "Why there is no Hitchhiker's Guide to Mathematics for Programmers"
+          url: "https://www.jeremykun.com/2013/02/08/why-there-is-no-hitchhikers-guide-to-mathematics-for-programmers/"
+          description: "Miksi matemaatikan oppimiseen ei ole oikotietä, ja miten matematiikkaa voi oppia ohjelmointia varten."
+      description: "Jeremy Kunin blogi matematiikasta, ohjelmoinnista, algoritmeista ja paljon muuta."
+      categories: ["Matematiikka", "Ohjelmistokehitys"]
+    sv:
+      title: "Math ∩ Programming"
+      author: "Jeremy Kun"
+      blog_url: "https://jeremykun.com/"
+      posts:
+        - title: "Why there is no Hitchhiker's Guide to Mathematics for Programmers"
+          url: "https://www.jeremykun.com/2013/02/08/why-there-is-no-hitchhikers-guide-to-mathematics-for-programmers/"
+          description: "Varför det inte finns några genvägar för att lära sig matematik, och hur man kan lära sig matematik för programmering."
+      description: "Jeremy Kuns blogg om matematik, programmering, algoritmer och mer."
+      categories: ["Matematik", "Programvaruutveckling"]
   - en:
       title: "Jonathan Björkskog"
       author: "Jonathan Björkskog"
@@ -87,7 +207,7 @@ blogs:
           url: "https://jonathanbjorkskog.com/12-rules-for-seo"
           description: "12 rules for SEO that will help you to get more organic traffic to your website."
       description: "Jonathan Björkskog's blog on SEO, digital marketing and more."
-      categories: ["Miscellaneous"]
+      categories: ["SEO"]
     fi:
       title: "Jonathan Björkskog"
       author: "Jonathan Björkskog"
@@ -97,7 +217,7 @@ blogs:
           url: "https://jonathanbjorkskog.com/12-rules-for-seo"
           description: "12 sääntöä SEO:lle, jotka auttavat sinua saamaan enemmän orgaanista liikennettä verkkosivustollesi."
       description: "Jonathan Björkskogin blogi SEO:sta, digitaalisesta markkinoinnista ja muusta."
-      categories: ["Sekalaiset"]
+      categories: ["SEO"]
     sv:
       title: "Jonathan Björkskog"
       author: "Jonathan Björkskog"
@@ -107,7 +227,7 @@ blogs:
           url: "https://jonathanbjorkskog.com/12-rules-for-seo"
           description: "12 regler för SEO som hjälper dig att få mer organisk trafik till din webbplats."
       description: "Jonathan Björkskogs blogg om SEO, digital marknadsföring och mer."
-      categories: ["Blandat"]
+      categories: ["SEO"]
   - en:
       title: "Katarina Dahlin"
       author: "Katarina Dahlin"
@@ -117,7 +237,7 @@ blogs:
           url: "https://katarinadahlin.com/seo-tactics-slow-flower-garden/"
           description: "Grow your blog's organic traffic with proven SEO tips: keyword research, content creation, meta optimization, and featured snippets."
       description: "Katarina Dahlin's blog on SEO, digital marketing, and more."
-      categories: ["Miscellaneous"]
+      categories: ["SEO"]
     fi:
       title: "Katarina Dahlin"
       author: "Katarina Dahlin"
@@ -127,7 +247,7 @@ blogs:
           url: "https://katarinadahlin.com/seo-tactics-slow-flower-garden/"
           description: "Kasvata blogin orgaanista liikennettäsi todistetuilla SEO-vinkkeillä: avainsanatutkimus, sisällön luominen, metaoptimointi."
       description: "Katarina Dahlinin blogi SEO:sta, digitaalisesta markkinoinnista ja muusta."
-      categories: ["Sekalaiset"]
+      categories: ["SEO"]
     sv:
       title: "Katarina Dahlin"
       author: "Katarina Dahlin"
@@ -137,5 +257,5 @@ blogs:
           url: "https://katarinadahlin.com/seo-tactics-slow-flower-garden/"
           description: "Öka din blogs organiska trafik med beprövade SEO-tips: nyckelordsforskning, innehållsskapande, metaoptimering."
       description: "Katarina Dahlins blogg om SEO, digital marknadsföring och mer"
-      categories: ["Blandat"]
+      categories: ["SEO"]
   

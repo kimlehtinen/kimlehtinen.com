@@ -1,7 +1,9 @@
+categories: "Categories"
 favorite_posts: "Favorite posts"
 latest_posts: "Latest posts"
 license: "License"
 no_posts: "No posts yet"
+post: "Post"
 privacy:
   consent:
     allow: "Allow"

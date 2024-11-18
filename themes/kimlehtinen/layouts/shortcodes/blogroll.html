@@ -2,31 +2,28 @@
 {{ $lang := .Site.Language.Lang }}
 {{ if $blogroll }}
 <div class="blogroll">
-{{ $categories := index $blogroll.categories $lang }}
-    {{ range $category := $categories.list }}
-        <h2>{{ $category.title }}</h2>
-        <p>{{ $category.description }}</p>
-        
         {{ $blogs := $blogroll.blogs}}
-        {{ $blogs = sort $blogs $lang "title" }}
+        {{ $blogs = sort $blogs (printf "%s.title" $lang) }}
         <ul>
         {{ range $blog := $blogs }}
             {{ $blogItem := index $blog $lang }}
             {{ if $blogItem }}
-                {{ range $blogItem.categories }}
-                    {{ if eq . $category.title }}
-                        {{ $post := index $blogItem.posts 0 }}
-                        <li>
-                            {{ $blogItem.title }}: 
-                            <a href="{{ $post.url }}" target="_blank">
-                            ({{ $post.title }})
-                            </a>
-                        </li>
-                    {{ end }}
-                {{ end }}
+                {{ $post := index $blogItem.posts 0 }}
+                <li>
+                    <a href="{{ $blogItem.blog_url }}" target="_blank">
+                        {{ if ne $blogItem.title $blogItem.author }}
+                            {{ $blogItem.title }} ({{ $blogItem.author }})
+                        {{ else }}
+                            {{ $blogItem.title }}
+                        {{ end }}
+                    </a>
+                    <ul>
+                    <li>{{ i18n "post" }}: <a href="{{ $post.url }}" target="_blank">{{ $post.title }}</a></li>
+                    <li>{{ i18n "categories" }}: {{ range $index, $category := $blogItem.categories }}{{ if gt $index 0 }}, {{ end }}{{ $category }}{{ end }}</li>
+                    </ul>
+                </li>
             {{ end }}
         {{ end }}
         </ul>
-    {{ end }}
 </div>
 {{ end }}

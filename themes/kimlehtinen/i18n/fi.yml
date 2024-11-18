@@ -1,7 +1,9 @@
+categories: "Kategoriat"
 favorite_posts: "Suosikkipostaukset"
 latest_posts: "Viimeisimmät postaukset"
 license: "Lisenssi"
 no_posts: "Ei postauksia vielä"
+post: "Postaus"
 privacy:
   consent:
     allow: "Salli"
