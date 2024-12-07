@@ -45,3 +45,5 @@ This is a journey I’m excited to undertake—rediscovering what made me passio
 
 If you’re feeling overwhelmed by the rapid pace of technological change, it’s perfectly fine to take a step back to focus on the basics. These core skills won’t go out of style anytime soon, and they’ll continue to serve you, no matter where the future takes us.
 
+If you are curious about the progress, take a look at the Git repo [https://github.com/kimlehtinen/data-structures-algorithms](https://github.com/kimlehtinen/data-structures-algorithms).
+
