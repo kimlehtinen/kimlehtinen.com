@@ -14,6 +14,10 @@ I have a MSc (dipl.ins., DI) degree in Automation & Computer Science, from Unive
 
 The last few years I have worked mainly in the industrial and energy sector. I have helped design and develop several cloud-based systems and tools, all aimed at helping companies to succeed and gain a competitive advantage. If I can help them succeed, we are one step closer to a better future.
 
+When it comes to Cloud, I have vast experience in building and running containerized applications in production using both Docker and Kubernetes. Most of my Cloud vendor experience is in Azure. I believe in focusing on fundamentals and good practices, which is why I am a big advocate of Cloud Native technologies and Cloud-agnostic patterns that apply across Cloud vendors and bare-metal. Code being deployed to these environments should reflect this, by being modular and using appropriate abstractions.
+
+Most of the code I have written professionally lately has been Python. In my free time I use a mix of Python and C/C++ depending on what I'm working on. However, I am always eager to learn new languages and technologies. I prioritize choosing the right tool for the job over debating which programming language is superior—spoiler alert: there’s no such thing as the best programming language.
+
 ## Beyond work
 When I'm not immersed in the world of technology, I like to spend my time being active, usually by going for long walks or mountain biking. And speaking of sports, football has always been a big part of my life. It has provided me with incredible moments, and lessons that I will bring with me throughout my life.
 
