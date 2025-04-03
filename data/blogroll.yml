@@ -113,9 +113,9 @@ blogs:
       author: "Jeff Geerling"
       blog_url: "https://www.jeffgeerling.com/"
       posts:
-        - title: "Ansible playbook to upgrade Ubuntu/Debian servers and reboot if needed"
-          url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
-          description: "How to use Ansible to upgrade Ubuntu/Debian servers and reboot if needed."
+        - title: "I won't connect my dishwasher to your stupid cloud"
+          url: "https://www.jeffgeerling.com/blog/2025/i-wont-connect-my-dishwasher-your-stupid-cloud"
+          description: "When it comes to technology, it's important to know both when and when not to use a technology. The same goes for the cloud."
       description: "Jeff Geerling's blog on Ansible, Kubernetes, Linux, Raspberry Pis and more."
       categories: ["Software Engineering", "Cloud", "DevOps"]
     fi:
@@ -123,9 +123,9 @@ blogs:
       author: "Jeff Geerling"
       blog_url: "https://www.jeffgeerling.com/"
       posts:
-        - title: "Ansible playbook to upgrade Ubuntu/Debian servers and reboot if needed"
-          url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
-          description: "Kuinka käyttää Ansiblea päivittämään Ubuntu/Debian-palvelimet ja käynnistämään uudelleen tarvittaessa."
+        - title: "I won't connect my dishwasher to your stupid cloud"
+          url: "https://www.jeffgeerling.com/blog/2025/i-wont-connect-my-dishwasher-your-stupid-cloud"
+          description: "Teknologian kohdalla on tärkeää tietää sekä milloin sitä kannattaa käyttää että milloin ei. Sama pätee pilvipalveluihin."
       description: "Jeff Geerlingin blogi Ansiblesta, Kuberneteksesta, Linuxista, Raspberry Pista ja paljon muuta."
       categories: ["Ohjelmistokehitys", "Pilvi", "DevOps"]
     sv:
@@ -133,9 +133,9 @@ blogs:
       author: "Jeff Geerling"
       blog_url: "https://www.jeffgeerling.com/"
       posts:
-        - title: "Ansible playbook to upgrade Ubuntu/Debian servers and reboot if needed"
-          url: "https://www.jeffgeerling.com/blog/2022/ansible-playbook-upgrade-ubuntudebian-servers-and-reboot-if-needed"
-          description: "Hur man använder Ansible för att uppgradera Ubuntu/Debian-servrar och starta om vid behov."
+        - title: "I won't connect my dishwasher to your stupid cloud"
+          url: "https://www.jeffgeerling.com/blog/2025/i-wont-connect-my-dishwasher-your-stupid-cloud"
+          description: "När det gäller teknologier är det viktigt att veta både när man ska använda en viss teknologi och när man inte ska göra det. Detsamma gäller för molnteknologier."
       description: "Jeff Geerlings blogg om Ansible, Kubernetes, Linux, Raspberry Pi och mer."
       categories: ["Programvaruutveckling", "Moln", "DevOps"]
   - en:
