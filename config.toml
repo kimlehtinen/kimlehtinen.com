@@ -24,10 +24,7 @@ enableRobotsTXT = true
     languageName = 'english'
     title = 'Kim Lehtinen'
     weight = 1
-    [languages.en.pagination]
-      disableAliases = true
-      pagerSize = 5
-      path = 'page'
+
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
@@ -67,6 +64,7 @@ enableRobotsTXT = true
       weight = 40
 
     [languages.en.params]
+      consent_enabled = false
       title = "Kim Lehtinen"
       copyright = "Copyright &copy; 2025 - Kim Lehtinen"
       #subtitle = 'Software, Cloud & Engineering'
@@ -77,6 +75,11 @@ enableRobotsTXT = true
       description = "Kim Lehtinen is a Software Engineer specializing in backend and cloud technologies."
       #summaryLength = 50
       bio = 'Hello! I’m Kim Lehtinen, a Software Engineer trying to make the world a better place through technology. I mostly work with backend and cloud technologies, and most of my experience is in industrial sector. I help companies gain a competitive advantage through software, automation & cloud.'
+
+      [languages.en.params.pagination]
+        disableAliases = true
+        pagerSize = 5
+        path = 'page'
 
       [languages.en.params.consent]
         [[languages.en.params.consent.services]]
@@ -93,16 +96,13 @@ enableRobotsTXT = true
     languageName = 'suomi'
     title = 'Kim Lehtinen'
     weight = 2
-    [languages.fi.pagination]
-      disableAliases = true
-      pagerSize = 5
-      path = 'page'
     [languages.fi.menu]
       [[languages.fi.menu.main]]
         identifier = "home"
         name = "Koti"
         url = "/fi"
         weight = 10
+
       #[[languages.fi.menu.main]]
       #  identifier = "blog"
       #  name = "Blogi"
@@ -130,6 +130,7 @@ enableRobotsTXT = true
       weight = 30
 
     [languages.fi.params]
+      consent_enabled = false
       title = "Kim Lehtinen"
       author = "Kim Lehtinen"
       siteimage = "/images/kimlehtinen.jpg"
@@ -140,7 +141,10 @@ enableRobotsTXT = true
       description = ""
       #summaryLength = 50
       bio = 'Hei! Olen Kim Lehtinen, ohjelmistokehittäjä, joka pyrkii parantamaan maailmaa teknologian avulla. Työskentelen pääasiassa backend- ja pilviteknologioiden parissa, ja suurin osa kokemuksestani on teollisuusalalta. Autan yrityksiä saavuttamaan kilpailuetua ohjelmistojen, automaation ja pilvipalveluiden avulla.'
-
+      [languages.fi.params.pagination]
+        disableAliases = true
+        pagerSize = 5
+        path = 'page'
       [languages.fi.params.consent]
         [[languages.fi.params.consent.services]]
           title = "Google Analytics (ei-toiminnallinen)"
@@ -156,10 +160,6 @@ enableRobotsTXT = true
     languageName = 'svenska'
     title = 'Kim Lehtinen'
     weight = 2
-    [languages.sv.pagination]
-      disableAliases = true
-      pagerSize = 5
-      path = 'page'
     [languages.sv.menu]
       [[languages.sv.menu.main]]
         identifier = "home"
@@ -193,6 +193,7 @@ enableRobotsTXT = true
       weight = 30
 
     [languages.sv.params]
+      consent_enabled = false
       title = "Kim Lehtinen"
       author = "Kim Lehtinen"
       siteimage = "/images/kimlehtinen.jpg"
@@ -203,7 +204,10 @@ enableRobotsTXT = true
       description = ""
       #summaryLength = 50
       bio = 'Hej! Jag är Kim Lehtinen, en mjukvaruingenjör som försöker göra världen till en bättre plats genom teknologi. Jag arbetar främst med backend- och molnteknologier, och största delen av min erfarenhet är inom industrisektorn. Jag hjälper företag att få konkurrensfördelar genom mjukvara, automation och molntjänster.'
-
+      [languages.sv.params.pagination]
+        disableAliases = true
+        pagerSize = 5
+        path = 'page'
       [languages.sv.params.consent]
         [[languages.sv.params.consent.services]]
           title = "Google Analytics (icke-funktionell)"

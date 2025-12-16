@@ -43,7 +43,9 @@
   your local /layouts/partials-directory -->
   {{- partial "custom_body.html" . -}}
 
-  {{ partial "consent.html" . }}
+  {{ if .Site.Params.consent_enabled }}
+    {{ partial "consent.html" . }}
+  {{ end }}
 
   {{ partial "custom_script.html" . }}
 
